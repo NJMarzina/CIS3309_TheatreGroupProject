@@ -12,7 +12,7 @@ namespace CIS3309_TheatreGroupProject
 {
     public partial class frmMain : Form
     {
-        String connectionString = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+        String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
 
         public frmMain()
         {
