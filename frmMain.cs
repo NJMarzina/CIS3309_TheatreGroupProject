@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace CIS3309_TheatreGroupProject
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        String connectionString = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+
+        public frmMain()
         {
             InitializeComponent();
+        }
+
+        public void btnEmployeeSignin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
