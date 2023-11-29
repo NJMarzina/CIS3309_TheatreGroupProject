@@ -12,9 +12,16 @@ namespace CIS3309_TheatreGroupProject
 {
     public partial class frmEmployeeSignin : Form
     {
+        String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+
         public frmEmployeeSignin()
         {
             InitializeComponent();
+        }
+
+        public void btnLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
