@@ -34,6 +34,8 @@ namespace CIS3309_TheatreGroupProject
             string password = tbPassword.Text;
 
             bool tf = emp.checkLogin(username, password);
+
+            MessageBox.Show(tf.ToString());
         }
 
         public void btnNewAccount_Click(object sender, EventArgs e)

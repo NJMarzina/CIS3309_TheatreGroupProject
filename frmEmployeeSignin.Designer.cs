@@ -84,9 +84,9 @@ namespace CIS3309_TheatreGroupProject
             // 
             this.btnNewAccount.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnNewAccount.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnNewAccount.Location = new System.Drawing.Point(127, 58);
+            this.btnNewAccount.Location = new System.Drawing.Point(105, 58);
             this.btnNewAccount.Name = "btnNewAccount";
-            this.btnNewAccount.Size = new System.Drawing.Size(143, 23);
+            this.btnNewAccount.Size = new System.Drawing.Size(165, 23);
             this.btnNewAccount.TabIndex = 3;
             this.btnNewAccount.Text = "Create new account";
             this.btnNewAccount.UseVisualStyleBackColor = false;
@@ -106,7 +106,7 @@ namespace CIS3309_TheatreGroupProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 450);
+            this.ClientSize = new System.Drawing.Size(375, 450);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnNewAccount);
             this.Controls.Add(this.tbPassword);

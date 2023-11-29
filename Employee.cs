@@ -14,6 +14,14 @@ namespace CIS3309_TheatreGroupProject
         string username;
         string password;
 
+        String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+
+        OleDbConnection myConnection;
+        OleDbCommand myCommand;
+        OleDbDataReader myReader;
+        OleDbDataAdapter myAdapter;
+        DataTable employeeTable;
+
         public Employee()
         {
 
@@ -67,31 +75,35 @@ namespace CIS3309_TheatreGroupProject
         {
             //will contain logic of if employee exists within the database and returns true or false
 
-            String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+            Employee emp = new Employee();
 
-            OleDbConnection myConnection;
-            OleDbCommand myCommand;
-            OleDbDataReader myReader;
-            OleDbDataAdapter myAdapter;
-            DataTable employeeTable;
+            string strSQLSearch = "SELECT Username, [Password] FROM Employees WHERE Username = '" + u + "' AND [Password] = '" + p + "'";
 
-            return true;
+            myConnection = new OleDbConnection(connectionStringEmployees);
+            myConnection.Open();
+
+            myCommand = new OleDbCommand(strSQLSearch, myConnection);
+            myCommand.Parameters.AddWithValue("Username", u);
+            myCommand.Parameters.AddWithValue("Password", p);
+
+            myReader = myCommand.ExecuteReader();
+
+            if (myReader.HasRows)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public void addEmployee(string fn, string u, string p)
         {
             //will contain logic of if employee exists within the database and returns true or false
 
-            String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
-
-            //OleDbConnection myConnection;
-            OleDbCommand myCommand;
-            OleDbDataReader myReader;
-            OleDbDataAdapter myAdapter;
-            DataTable employeeTable;
-
             Employee emp = new Employee();
-            OleDbConnection myConnection = new OleDbConnection(connectionStringEmployees);
+            myConnection = new OleDbConnection(connectionStringEmployees);
 
             emp.Name = fn;
             emp.Username = u;
