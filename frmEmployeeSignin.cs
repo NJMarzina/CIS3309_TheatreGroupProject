@@ -35,5 +35,12 @@ namespace CIS3309_TheatreGroupProject
 
             bool tf = emp.checkLogin(username, password);
         }
+
+        public void btnNewAccount_Click(object sender, EventArgs e)
+        {
+            frmNewEmployee newEmp = new frmNewEmployee();
+
+            newEmp.Show();
+        }
     }
 }

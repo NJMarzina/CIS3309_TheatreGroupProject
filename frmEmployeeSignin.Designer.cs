@@ -90,6 +90,7 @@ namespace CIS3309_TheatreGroupProject
             this.btnNewAccount.TabIndex = 3;
             this.btnNewAccount.Text = "Create new account";
             this.btnNewAccount.UseVisualStyleBackColor = false;
+            this.btnNewAccount.Click += new System.EventHandler(this.btnNewAccount_Click);
             // 
             // btnLogin
             // 
