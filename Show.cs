@@ -8,6 +8,12 @@ namespace CIS3309_TheatreGroupProject
 {
     class Show
     {
-        //This object will hold seat availibility, theater room and movie
+        public TheaterRoom theaterRoom { get; set; }
+        public Movie movie { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+
+
+        public Show(){}
     }
 }
