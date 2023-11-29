@@ -60,5 +60,12 @@ namespace CIS3309_TheatreGroupProject
                 this.password = value;
             }
         }
+
+        public bool checkLogin(string u, string p)
+        {
+            //will contain logic of if employee exists within the database and returns true or false
+
+            return true;
+        }
     }
 }

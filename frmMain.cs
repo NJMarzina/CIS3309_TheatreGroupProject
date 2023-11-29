@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,12 @@ namespace CIS3309_TheatreGroupProject
     public partial class frmMain : Form
     {
         String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+
+        OleDbConnection myConnection;
+        OleDbCommand myCommand;
+        OleDbDataReader myReader;
+        OleDbDataAdapter myAdapter;
+        DataTable employeeTable;
 
         public frmMain()
         {
