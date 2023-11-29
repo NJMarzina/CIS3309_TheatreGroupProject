@@ -51,6 +51,7 @@ namespace CIS3309_TheatreGroupProject
             this.btnView.TabIndex = 1;
             this.btnView.Text = "View Movies";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // frmMain
             // 
