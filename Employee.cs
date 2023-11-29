@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data;
+using System.Data.OleDb;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -64,6 +66,14 @@ namespace CIS3309_TheatreGroupProject
         public bool checkLogin(string u, string p)
         {
             //will contain logic of if employee exists within the database and returns true or false
+
+            String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+
+            OleDbConnection myConnection;
+            OleDbCommand myCommand;
+            OleDbDataReader myReader;
+            OleDbDataAdapter myAdapter;
+            DataTable employeeTable;
 
             return true;
         }
