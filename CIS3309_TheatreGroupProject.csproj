@@ -84,6 +84,9 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMovieView.resx">
+      <DependentUpon>frmMovieView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNewEmployee.resx">
       <DependentUpon>frmNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Employees.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Movies.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Shows.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
