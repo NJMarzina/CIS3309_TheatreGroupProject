@@ -77,5 +77,34 @@ namespace CIS3309_TheatreGroupProject
 
             return true;
         }
+
+        public void addEmployee(string fn, string u, string p)
+        {
+            //will contain logic of if employee exists within the database and returns true or false
+
+            String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+
+            //OleDbConnection myConnection;
+            OleDbCommand myCommand;
+            OleDbDataReader myReader;
+            OleDbDataAdapter myAdapter;
+            DataTable employeeTable;
+
+            Employee emp = new Employee();
+            OleDbConnection myConnection = new OleDbConnection(connectionStringEmployees);
+
+            emp.Name = fn;
+            emp.Username = u;
+            emp.Password = p;
+
+            string strSQL = "INSERT INTO Employees (FullName, Username, [Password])" +
+            "VALUES ('" + emp.Name + "','" + emp.Username + "','" + emp.Password + "')";
+
+            DataSet empDataSet = new DataSet();
+
+            myAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            myAdapter.Fill(empDataSet, "Employees");
+            employeeTable = empDataSet.Tables["Employees"];
+        }
     }
 }
