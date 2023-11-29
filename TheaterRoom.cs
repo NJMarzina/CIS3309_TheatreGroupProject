@@ -17,10 +17,10 @@ namespace CIS3309_TheatreGroupProject
         public TheaterRoom(String room) {
             this.room = room;
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 97; i < 4; i++)
             {
 
-                for (int z = 0; z < 10; i++)
+                for (int z = 1; z < 11; i++)
                 {
                     string key = Convert.ToChar(i).ToString();
                     key += z.ToString();
