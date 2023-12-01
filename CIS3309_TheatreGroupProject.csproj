@@ -74,9 +74,11 @@
       <DependentUpon>frmNewEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Movie.cs" />
+    <Compile Include="MovieManageSystem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Show.cs" />
+    <Compile Include="ShowManageSystem.cs" />
     <Compile Include="TheaterRoom.cs" />
     <EmbeddedResource Include="frmEmployeeSignin.resx">
       <DependentUpon>frmEmployeeSignin.cs</DependentUpon>
