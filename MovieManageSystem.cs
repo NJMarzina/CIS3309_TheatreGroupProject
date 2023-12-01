@@ -63,12 +63,12 @@ namespace CIS3309_TheatreGroupProject
 
 
 
-        /// //////////////////////////////////////////////////////  DELETE  ///////////////////////////////////////
+        //////////////////////////////////////////////  DELETE  ///////////////////////////////////////
 
 
-        public static void DeleteMovieDB(string name)
+        public static void DeleteMovieDB(string title)
         {
-            string strSQL = "DELETE FROM MovieTable WHERE Title ='" + name + "'";
+            string strSQL = "DELETE FROM MovieTable WHERE Title ='" + title + "'";
             OleDbCommand deleteCommand = new OleDbCommand(strSQL, myConnection);
             try
             {
@@ -82,5 +82,27 @@ namespace CIS3309_TheatreGroupProject
             }
 
         }
+
+        public static void UpdateDB(string title, string columnName, object newValue)
+        {
+            myConnection.Open();
+            string strSQL = $"UPDATE MoviesTable SET {columnName} = ? WHERE Title = ?";
+           
+
+                
+
+                using (OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection))
+                {
+
+                 myCommand.Parameters.AddWithValue("@newValue", newValue);
+                 myCommand.Parameters.AddWithValue("@name", title);
+
+
+                 myCommand.ExecuteNonQuery();
+                }
+            myConnection.Close();
+         }
+
+        
     }
 }

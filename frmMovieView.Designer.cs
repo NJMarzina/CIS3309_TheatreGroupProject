@@ -32,13 +32,13 @@ namespace CIS3309_TheatreGroupProject
             this.label1 = new System.Windows.Forms.Label();
             this.lblMovies = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMovie = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnShowUI = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +54,7 @@ namespace CIS3309_TheatreGroupProject
             // lblMovies
             // 
             this.lblMovies.AutoSize = true;
-            this.lblMovies.Location = new System.Drawing.Point(422, 129);
+            this.lblMovies.Location = new System.Drawing.Point(381, 74);
             this.lblMovies.Name = "lblMovies";
             this.lblMovies.Size = new System.Drawing.Size(75, 25);
             this.lblMovies.TabIndex = 1;
@@ -62,27 +62,29 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(52, 585);
+            this.btnEdit.Location = new System.Drawing.Point(940, 111);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(161, 56);
             this.btnEdit.TabIndex = 2;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // dataGridView1
+            // dgvMovie
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(52, 172);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 72;
-            this.dataGridView1.RowTemplate.Height = 31;
-            this.dataGridView1.Size = new System.Drawing.Size(844, 347);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvMovie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMovie.Location = new System.Drawing.Point(43, 111);
+            this.dgvMovie.Name = "dgvMovie";
+            this.dgvMovie.RowHeadersWidth = 72;
+            this.dgvMovie.RowTemplate.Height = 31;
+            this.dgvMovie.Size = new System.Drawing.Size(844, 444);
+            this.dgvMovie.TabIndex = 3;
+            this.dgvMovie.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovie_CellValueChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 522);
+            this.label2.Location = new System.Drawing.Point(893, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(635, 50);
             this.label2.TabIndex = 4;
@@ -91,25 +93,27 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(219, 585);
+            this.btnDelete.Location = new System.Drawing.Point(1122, 111);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(161, 56);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(386, 585);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 56);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Add Movie";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(940, 187);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(343, 56);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "Add Movie";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1091, 620);
+            this.btnClose.Location = new System.Drawing.Point(940, 499);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(161, 56);
             this.btnClose.TabIndex = 7;
@@ -118,7 +122,7 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnShowUI
             // 
-            this.btnShowUI.Location = new System.Drawing.Point(1091, 558);
+            this.btnShowUI.Location = new System.Drawing.Point(1122, 499);
             this.btnShowUI.Name = "btnShowUI";
             this.btnShowUI.Size = new System.Drawing.Size(161, 56);
             this.btnShowUI.TabIndex = 8;
@@ -129,19 +133,19 @@ namespace CIS3309_TheatreGroupProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 688);
+            this.ClientSize = new System.Drawing.Size(1526, 653);
             this.Controls.Add(this.btnShowUI);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMovie);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.lblMovies);
             this.Controls.Add(this.label1);
             this.Name = "frmMovieView";
             this.Text = "frmMovieView";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,10 +156,10 @@ namespace CIS3309_TheatreGroupProject
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMovies;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMovie;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnShowUI;
     }

@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.cs" />
+    <Compile Include="frmAddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddMovie.Designer.cs">
+      <DependentUpon>frmAddMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmployeeSignin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Show.cs" />
     <Compile Include="ShowManageSystem.cs" />
     <Compile Include="TheaterRoom.cs" />
+    <EmbeddedResource Include="frmAddMovie.resx">
+      <DependentUpon>frmAddMovie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeSignin.resx">
       <DependentUpon>frmEmployeeSignin.cs</DependentUpon>
     </EmbeddedResource>
