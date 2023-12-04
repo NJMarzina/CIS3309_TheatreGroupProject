@@ -125,7 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Employees.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Movies.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
