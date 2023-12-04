@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
-      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="frmAddMovie.Designer.cs">
       <DependentUpon>frmAddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddShow.Designer.cs">
+      <DependentUpon>frmAddShow.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmployeeSignin.cs">
       <SubType>Form</SubType>
@@ -85,6 +91,12 @@
     <Compile Include="frmNewEmployee.Designer.cs">
       <DependentUpon>frmNewEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmShowView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowView.Designer.cs">
+      <DependentUpon>frmShowView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Movie.cs" />
     <Compile Include="MovieManageSystem.cs" />
     <Compile Include="Program.cs" />
@@ -95,6 +107,9 @@
     <Compile Include="Ticket.cs" />
     <EmbeddedResource Include="frmAddMovie.resx">
       <DependentUpon>frmAddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddShow.resx">
+      <DependentUpon>frmAddShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeSignin.resx">
       <DependentUpon>frmEmployeeSignin.cs</DependentUpon>
@@ -110,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewEmployee.resx">
       <DependentUpon>frmNewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowView.resx">
+      <DependentUpon>frmShowView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

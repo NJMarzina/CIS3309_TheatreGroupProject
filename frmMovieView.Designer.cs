@@ -36,12 +36,10 @@ namespace CIS3309_TheatreGroupProject
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnShowUI = new System.Windows.Forms.Button();
             this.cbxGenre = new System.Windows.Forms.ComboBox();
             this.btnFilter = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDspInfoPage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovie)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +77,7 @@ namespace CIS3309_TheatreGroupProject
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(868, 9);
+            this.label2.Location = new System.Drawing.Point(893, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(500, 50);
             this.label2.TabIndex = 4;
@@ -109,22 +107,13 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(948, 499);
+            this.btnClose.Location = new System.Drawing.Point(946, 499);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(343, 56);
             this.btnClose.TabIndex = 7;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnShowUI
-            // 
-            this.btnShowUI.Location = new System.Drawing.Point(948, 437);
-            this.btnShowUI.Name = "btnShowUI";
-            this.btnShowUI.Size = new System.Drawing.Size(343, 56);
-            this.btnShowUI.TabIndex = 8;
-            this.btnShowUI.Text = "View Shows";
-            this.btnShowUI.UseVisualStyleBackColor = true;
             // 
             // cbxGenre
             // 
@@ -136,7 +125,7 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnFilter
             // 
-            this.btnFilter.Location = new System.Drawing.Point(166, 3);
+            this.btnFilter.Location = new System.Drawing.Point(166, 16);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.Size = new System.Drawing.Size(216, 56);
             this.btnFilter.TabIndex = 10;
@@ -161,30 +150,18 @@ namespace CIS3309_TheatreGroupProject
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.cbxGenre);
-            this.panel1.Location = new System.Drawing.Point(909, 111);
+            this.panel1.Location = new System.Drawing.Point(908, 227);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(417, 245);
             this.panel1.TabIndex = 12;
-            // 
-            // btnDspInfoPage
-            // 
-            this.btnDspInfoPage.Location = new System.Drawing.Point(948, 375);
-            this.btnDspInfoPage.Name = "btnDspInfoPage";
-            this.btnDspInfoPage.Size = new System.Drawing.Size(343, 56);
-            this.btnDspInfoPage.TabIndex = 11;
-            this.btnDspInfoPage.Text = "Display Info Page";
-            this.btnDspInfoPage.UseVisualStyleBackColor = true;
-            this.btnDspInfoPage.Click += new System.EventHandler(this.button3_Click);
             // 
             // frmMovieView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1502, 636);
-            this.Controls.Add(this.btnDspInfoPage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnShowUI);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvMovie);
@@ -208,11 +185,9 @@ namespace CIS3309_TheatreGroupProject
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnShowUI;
         private System.Windows.Forms.ComboBox cbxGenre;
         private System.Windows.Forms.Button btnFilter;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnDspInfoPage;
     }
 }

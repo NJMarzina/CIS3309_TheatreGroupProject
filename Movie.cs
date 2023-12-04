@@ -17,7 +17,7 @@ namespace CIS3309_TheatreGroupProject
         public string Description { get; set; }
 
 
-        public Movie(string title, Genre genre, string img, string rating, string director, string description)
+        public Movie(string title, Genre genre,  string director, string rating, string description, string img)
         {
             Title = title;
             MovieGenre = genre;

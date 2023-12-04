@@ -48,7 +48,8 @@ namespace CIS3309_TheatreGroupProject
 
         public void btnViewShows_Click(object sender, EventArgs e)
         {
-
+            frmShowView showsForm = new frmShowView();
+            showsForm.Show();
         }
     }
 }

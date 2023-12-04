@@ -105,14 +105,37 @@ namespace CIS3309_TheatreGroupProject
 
         public static DataTable FilterMovieGenreDB(String itemType)
         {
-            string strSQL = "SELECT * FROM MoivesTable WHERE Genre = '" + itemType + "'";
+            string strSQL = "SELECT * FROM MoviesTable WHERE Genre = '" + itemType + "'";
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
             DataSet movieDataSet = new DataSet("MoivesTable");
             myDataAdapter.Fill(movieDataSet, "MoviesTable");
 
-            DataTable filteredMovieTable = movieDataSet.Tables["ItemTable"];
+            DataTable filteredMovieTable = movieDataSet.Tables["MoviesTable"];
             return filteredMovieTable;
 
+        }
+
+        /////////////////////// return a list of movie titles /////////////////
+        ///
+        public static List<string> GetMovieTitles()
+        {
+            List<string> moviesList = new List<string>();
+            string strSQL = "SELECT Title FROM MoviesTable";
+            OleDbDataAdapter myAdapter = new OleDbDataAdapter(strSQL, myConnection);
+
+            DataSet movieDataSet = new DataSet();
+            myAdapter.Fill(movieDataSet, "MoviesTable");
+
+            DataTable movieTable = movieDataSet.Tables["MoviesTable"];
+            foreach (DataRow row in movieTable.Rows)
+            {
+
+                string title = row["Title"].ToString();
+                moviesList.Add(title);
+            }
+
+
+                return moviesList;
         }
 
 
