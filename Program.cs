@@ -16,7 +16,7 @@ namespace CIS3309_TheatreGroupProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new frmEmployeeSignin());
         }
     }
 }

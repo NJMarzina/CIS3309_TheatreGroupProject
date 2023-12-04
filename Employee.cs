@@ -14,7 +14,7 @@ namespace CIS3309_TheatreGroupProject
         string username;
         string password;
 
-        String connectionStringEmployees = "provider = Microsoft.ACE.OLEDB.12.0; Data Source = Employees.accdb;";
+        String connectionStringEmployees = "provider=Microsoft.ACE.OLEDB.12.0;Data Source=Employees.accdb;";
 
         OleDbConnection myConnection;
         OleDbCommand myCommand;
@@ -112,11 +112,24 @@ namespace CIS3309_TheatreGroupProject
             string strSQL = "INSERT INTO Employees (FullName, Username, [Password])" +
             "VALUES ('" + emp.Name + "','" + emp.Username + "','" + emp.Password + "')";
 
-            DataSet empDataSet = new DataSet();
+            OleDbCommand insertCommand = new OleDbCommand(strSQL, myConnection);
 
-            myAdapter = new OleDbDataAdapter(strSQL, myConnection);
-            myAdapter.Fill(empDataSet, "Employees");
-            employeeTable = empDataSet.Tables["Employees"];
+            try
+            {
+                myConnection.Open();
+                insertCommand.ExecuteNonQuery();
+            }
+            finally
+            {
+                myConnection.Close();
+            }
+
+
+            //DataSet empDataSet = new DataSet();
+
+            //myAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            //myAdapter.Fill(empDataSet, "Employees");
+            //employeeTable = empDataSet.Tables["Employees"];
         }
     }
 }

@@ -29,23 +29,13 @@ namespace CIS3309_TheatreGroupProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEmployeeSignin = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
+            this.btnViewShows = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnEmployeeSignin
-            // 
-            this.btnEmployeeSignin.Location = new System.Drawing.Point(170, 175);
-            this.btnEmployeeSignin.Name = "btnEmployeeSignin";
-            this.btnEmployeeSignin.Size = new System.Drawing.Size(162, 67);
-            this.btnEmployeeSignin.TabIndex = 0;
-            this.btnEmployeeSignin.Text = "Employee Sign-in";
-            this.btnEmployeeSignin.UseVisualStyleBackColor = true;
-            this.btnEmployeeSignin.Click += new System.EventHandler(this.btnEmployeeSignin_Click);
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(426, 175);
+            this.btnView.Location = new System.Drawing.Point(78, 74);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(162, 67);
             this.btnView.TabIndex = 1;
@@ -53,13 +43,23 @@ namespace CIS3309_TheatreGroupProject
             this.btnView.UseVisualStyleBackColor = true;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
+            // btnViewShows
+            // 
+            this.btnViewShows.Location = new System.Drawing.Point(78, 240);
+            this.btnViewShows.Name = "btnViewShows";
+            this.btnViewShows.Size = new System.Drawing.Size(162, 67);
+            this.btnViewShows.TabIndex = 2;
+            this.btnViewShows.Text = "View Shows";
+            this.btnViewShows.UseVisualStyleBackColor = true;
+            this.btnViewShows.Click += new System.EventHandler(this.btnViewShows_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(330, 450);
+            this.Controls.Add(this.btnViewShows);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.btnEmployeeSignin);
             this.Name = "frmMain";
             this.Text = "Main";
             this.ResumeLayout(false);
@@ -67,9 +67,8 @@ namespace CIS3309_TheatreGroupProject
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnEmployeeSignin;
         private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Button btnViewShows;
     }
 }
 

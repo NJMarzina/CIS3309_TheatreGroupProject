@@ -92,6 +92,7 @@
     <Compile Include="Show.cs" />
     <Compile Include="ShowManageSystem.cs" />
     <Compile Include="TheaterRoom.cs" />
+    <Compile Include="Ticket.cs" />
     <EmbeddedResource Include="frmAddMovie.resx">
       <DependentUpon>frmAddMovie.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Employees.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Movies.accdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -29,13 +29,21 @@ namespace CIS3309_TheatreGroupProject
         public void btnLogin_Click(object sender, EventArgs e)
         {
             Employee emp = new Employee();
+            frmMain main = new frmMain();
 
             string username = tbUsername.Text;
             string password = tbPassword.Text;
 
             bool tf = emp.checkLogin(username, password);
 
-            MessageBox.Show(tf.ToString());
+            if(tf)
+            {
+                main.Show();
+            }
+            else
+            {
+                MessageBox.Show("Enter correct credentials before proceeding.");
+            }
         }
 
         public void btnNewAccount_Click(object sender, EventArgs e)

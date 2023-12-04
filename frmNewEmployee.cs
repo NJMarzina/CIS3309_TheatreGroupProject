@@ -30,6 +30,12 @@ namespace CIS3309_TheatreGroupProject
             Employee emp = new Employee();
 
             emp.addEmployee(tbFullName.Text, tbUsername.Text, tbPassword.Text);
+
+            MessageBox.Show(tbFullName.Text + " your employee account has been successfully added.");
+
+            tbFullName.Clear();
+            tbUsername.Clear();
+            tbPassword.Clear();
         }
     }
 }

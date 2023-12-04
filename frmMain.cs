@@ -21,6 +21,8 @@ namespace CIS3309_TheatreGroupProject
         OleDbDataAdapter myAdapter;
         DataTable employeeTable;
 
+        bool signedIn = false;
+
         public frmMain()
         {
             InitializeComponent();
@@ -28,9 +30,9 @@ namespace CIS3309_TheatreGroupProject
 
         public void btnEmployeeSignin_Click(object sender, EventArgs e)
         {
-            frmEmployeeSignin signin = new frmEmployeeSignin();
+            //frmEmployeeSignin signin = new frmEmployeeSignin();
 
-            signin.Show();
+            //signin.Show();
         }
 
         public void btnView_Click(object sender, EventArgs e)
@@ -42,6 +44,11 @@ namespace CIS3309_TheatreGroupProject
             //redirect to form that shows all movies playing
             //redirect from movie playing into seat selection
             //from seat selected into checkout
+        }
+
+        public void btnViewShows_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
