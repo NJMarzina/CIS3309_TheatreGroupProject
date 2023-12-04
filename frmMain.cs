@@ -45,5 +45,10 @@ namespace CIS3309_TheatreGroupProject
             //redirect from movie playing into seat selection
             //from seat selected into checkout
         }
+
+        public void btnViewShows_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

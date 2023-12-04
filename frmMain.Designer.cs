@@ -30,11 +30,12 @@ namespace CIS3309_TheatreGroupProject
         private void InitializeComponent()
         {
             this.btnView = new System.Windows.Forms.Button();
+            this.btnViewShows = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(273, 104);
+            this.btnView.Location = new System.Drawing.Point(78, 74);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(162, 67);
             this.btnView.TabIndex = 1;
@@ -42,11 +43,22 @@ namespace CIS3309_TheatreGroupProject
             this.btnView.UseVisualStyleBackColor = true;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
+            // btnViewShows
+            // 
+            this.btnViewShows.Location = new System.Drawing.Point(78, 240);
+            this.btnViewShows.Name = "btnViewShows";
+            this.btnViewShows.Size = new System.Drawing.Size(162, 67);
+            this.btnViewShows.TabIndex = 2;
+            this.btnViewShows.Text = "View Shows";
+            this.btnViewShows.UseVisualStyleBackColor = true;
+            this.btnViewShows.Click += new System.EventHandler(this.btnViewShows_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(330, 450);
+            this.Controls.Add(this.btnViewShows);
             this.Controls.Add(this.btnView);
             this.Name = "frmMain";
             this.Text = "Main";
@@ -56,6 +68,7 @@ namespace CIS3309_TheatreGroupProject
 
         #endregion
         private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Button btnViewShows;
     }
 }
 
