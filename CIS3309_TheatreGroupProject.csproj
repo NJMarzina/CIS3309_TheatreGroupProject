@@ -86,6 +86,7 @@
     <Compile Include="Show.cs" />
     <Compile Include="ShowManageSystem.cs" />
     <Compile Include="TheaterRoom.cs" />
+    <Compile Include="Ticket.cs" />
     <EmbeddedResource Include="frmAddMovie.resx">
       <DependentUpon>frmAddMovie.cs</DependentUpon>
     </EmbeddedResource>

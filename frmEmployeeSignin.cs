@@ -26,7 +26,7 @@ namespace CIS3309_TheatreGroupProject
             InitializeComponent();
         }
 
-        public void btnLogin_Click(object sender, EventArgs e)
+        public bool btnLogin_Click(object sender, EventArgs e)
         {
             Employee emp = new Employee();
 
@@ -35,7 +35,16 @@ namespace CIS3309_TheatreGroupProject
 
             bool tf = emp.checkLogin(username, password);
 
-            MessageBox.Show(tf.ToString());
+            if(tf)
+            {
+                MessageBox.Show("You have been successfully signed in.");
+            }
+            else
+            {
+                MessageBox.Show("Please enter correct credentials.");
+            }
+
+            return tf;
         }
 
         public void btnNewAccount_Click(object sender, EventArgs e)

@@ -21,6 +21,8 @@ namespace CIS3309_TheatreGroupProject
         OleDbDataAdapter myAdapter;
         DataTable employeeTable;
 
+        bool signedIn = false;
+
         public frmMain()
         {
             InitializeComponent();
@@ -35,9 +37,16 @@ namespace CIS3309_TheatreGroupProject
 
         public void btnView_Click(object sender, EventArgs e)
         {
-            frmMovieView viewMovies = new frmMovieView();
+            if(signedIn)
+            {
+                frmMovieView viewMovies = new frmMovieView();
 
-            viewMovies.Show();
+                viewMovies.Show();
+            }
+            else
+            {
+                MessageBox.Show("You need to sign in first.");
+            }
 
             //redirect to form that shows all movies playing
             //redirect from movie playing into seat selection
