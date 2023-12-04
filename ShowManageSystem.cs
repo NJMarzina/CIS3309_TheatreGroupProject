@@ -10,8 +10,9 @@ namespace CIS3309_TheatreGroupProject
 {
     class ShowManageSystem
     {
-        public static OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
 
+        public static OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
+        public static string title;
         public static DataTable LoadShowDB()
         {
             return null;

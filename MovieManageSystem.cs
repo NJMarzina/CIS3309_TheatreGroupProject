@@ -30,7 +30,7 @@ namespace CIS3309_TheatreGroupProject
             myDataAdapter.Fill(movieDataSet, "MovieTable");
 
             movieTable = movieDataSet.Tables["MovieTable"];
-            string joe = "hey";
+            
             return movieTable;
 
         }
@@ -38,7 +38,7 @@ namespace CIS3309_TheatreGroupProject
         /// /////////////////////////////////////////  INSERT  ///////////////////////////////////////////////////////////////
         public static void InsertMovieDB(Movie movie)
         {
-            string ih = "hi";
+       
             // SQL STATMENT
             string strSQL = "INSERT INTO MoviesTable (Title, Genre, Director, Rating, Description, Img)" +
             " VALUES ('" + movie.Title + "','" + movie.MovieGenre + "','" + movie.Director + "','" + movie.Rating + "','" +
@@ -68,7 +68,7 @@ namespace CIS3309_TheatreGroupProject
 
         public static void DeleteMovieDB(string title)
         {
-            string strSQL = "DELETE FROM MovieTable WHERE Title ='" + title + "'";
+            string strSQL = "DELETE FROM MoviesTable WHERE Title ='" + title + "'";
             OleDbCommand deleteCommand = new OleDbCommand(strSQL, myConnection);
             try
             {
@@ -103,6 +103,18 @@ namespace CIS3309_TheatreGroupProject
             myConnection.Close();
          }
 
-        
+        public static DataTable FilterMovieGenreDB(String itemType)
+        {
+            string strSQL = "SELECT * FROM MoivesTable WHERE Genre = '" + itemType + "'";
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            DataSet movieDataSet = new DataSet("MoivesTable");
+            myDataAdapter.Fill(movieDataSet, "MoviesTable");
+
+            DataTable filteredMovieTable = movieDataSet.Tables["ItemTable"];
+            return filteredMovieTable;
+
+        }
+
+
     }
 }

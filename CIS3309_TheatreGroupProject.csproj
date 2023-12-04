@@ -67,6 +67,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMovieInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovieInfo.Designer.cs">
+      <DependentUpon>frmMovieInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMovieView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovieInfo.resx">
+      <DependentUpon>frmMovieInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMovieView.resx">
       <DependentUpon>frmMovieView.cs</DependentUpon>
@@ -128,10 +137,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Movies.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Shows.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
