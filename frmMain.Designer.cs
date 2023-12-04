@@ -29,23 +29,12 @@ namespace CIS3309_TheatreGroupProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEmployeeSignin = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnEmployeeSignin
-            // 
-            this.btnEmployeeSignin.Location = new System.Drawing.Point(170, 175);
-            this.btnEmployeeSignin.Name = "btnEmployeeSignin";
-            this.btnEmployeeSignin.Size = new System.Drawing.Size(162, 67);
-            this.btnEmployeeSignin.TabIndex = 0;
-            this.btnEmployeeSignin.Text = "Employee Sign-in";
-            this.btnEmployeeSignin.UseVisualStyleBackColor = true;
-            this.btnEmployeeSignin.Click += new System.EventHandler(this.btnEmployeeSignin_Click);
-            // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(426, 175);
+            this.btnView.Location = new System.Drawing.Point(273, 104);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(162, 67);
             this.btnView.TabIndex = 1;
@@ -59,7 +48,6 @@ namespace CIS3309_TheatreGroupProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.btnEmployeeSignin);
             this.Name = "frmMain";
             this.Text = "Main";
             this.ResumeLayout(false);
@@ -67,8 +55,6 @@ namespace CIS3309_TheatreGroupProject
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnEmployeeSignin;
         private System.Windows.Forms.Button btnView;
     }
 }

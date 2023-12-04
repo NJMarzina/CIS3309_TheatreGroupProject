@@ -30,23 +30,16 @@ namespace CIS3309_TheatreGroupProject
 
         public void btnEmployeeSignin_Click(object sender, EventArgs e)
         {
-            frmEmployeeSignin signin = new frmEmployeeSignin();
+            //frmEmployeeSignin signin = new frmEmployeeSignin();
 
-            signin.Show();
+            //signin.Show();
         }
 
         public void btnView_Click(object sender, EventArgs e)
         {
-            if(signedIn)
-            {
-                frmMovieView viewMovies = new frmMovieView();
+            frmMovieView viewMovies = new frmMovieView();
 
-                viewMovies.Show();
-            }
-            else
-            {
-                MessageBox.Show("You need to sign in first.");
-            }
+            viewMovies.Show();
 
             //redirect to form that shows all movies playing
             //redirect from movie playing into seat selection
