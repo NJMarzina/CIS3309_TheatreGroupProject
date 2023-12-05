@@ -8,6 +8,28 @@ namespace CIS3309_TheatreGroupProject
 {
     class Ticket
     {
+        //seat
+        //movie
+        //theatre room
+        //time
+        //price
+
+        enum SeatStatus { open, full };
+        Dictionary<String, SeatStatus> seatChart;
+        Movie movie;
+        TheaterRoom theatreRoom;
+        enum TimeSlot { SLOT_0800_1130, SLOT_1130_1500, SLOT_1500_1830, SLOT_1830_2200};
+        double price;
+
+        public Ticket()
+        {
+
+        }
+
+        public Ticket(Movie m, TheaterRoom theater, int price)
+        {
+
+        }
 
     }
 }

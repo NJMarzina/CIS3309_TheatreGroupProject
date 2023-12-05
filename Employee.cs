@@ -124,7 +124,6 @@ namespace CIS3309_TheatreGroupProject
                 myConnection.Close();
             }
 
-
             //DataSet empDataSet = new DataSet();
 
             //myAdapter = new OleDbDataAdapter(strSQL, myConnection);

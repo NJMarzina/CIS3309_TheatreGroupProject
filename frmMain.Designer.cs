@@ -35,7 +35,7 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(78, 74);
+            this.btnView.Location = new System.Drawing.Point(78, 108);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(162, 67);
             this.btnView.TabIndex = 1;
@@ -45,7 +45,7 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnViewShows
             // 
-            this.btnViewShows.Location = new System.Drawing.Point(78, 240);
+            this.btnViewShows.Location = new System.Drawing.Point(78, 237);
             this.btnViewShows.Name = "btnViewShows";
             this.btnViewShows.Size = new System.Drawing.Size(162, 67);
             this.btnViewShows.TabIndex = 2;
