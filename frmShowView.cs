@@ -38,5 +38,10 @@ namespace CIS3309_TheatreGroupProject
         {
 
         }
+
+        private void cbxMovieTitle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

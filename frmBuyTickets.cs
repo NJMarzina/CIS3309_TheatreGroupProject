@@ -15,9 +15,10 @@ namespace CIS3309_TheatreGroupProject
         public frmBuyTickets()
         {
             InitializeComponent();
+            cbxMovies.DataSource = MovieManageSystem.GetMovieTitles();
         }
 
-        private void frmBuyTickets_Load(object sender, EventArgs e)
+        public void frmBuyTickets_Load(object sender, EventArgs e)
         {
             //filter by movie
             //filter by time slot

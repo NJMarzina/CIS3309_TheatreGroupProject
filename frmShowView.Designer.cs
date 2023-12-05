@@ -91,6 +91,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbxMovieTitle.Name = "cbxMovieTitle";
             this.cbxMovieTitle.Size = new System.Drawing.Size(123, 24);
             this.cbxMovieTitle.TabIndex = 6;
+            this.cbxMovieTitle.SelectedIndexChanged += new System.EventHandler(this.cbxMovieTitle_SelectedIndexChanged);
             // 
             // cbxFilterTime
             // 
