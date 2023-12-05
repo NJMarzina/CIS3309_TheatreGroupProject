@@ -33,5 +33,10 @@ namespace CIS3309_TheatreGroupProject
         {
 
         }
+
+        private void frmShowView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -51,5 +51,11 @@ namespace CIS3309_TheatreGroupProject
             frmShowView showsForm = new frmShowView();
             showsForm.Show();
         }
+
+        public void btnBuyTickets_Click(object sender, EventArgs e)
+        {
+            frmBuyTickets buy = new frmBuyTickets();
+            buy.Show();
+        }
     }
 }

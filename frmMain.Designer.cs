@@ -31,11 +31,12 @@ namespace CIS3309_TheatreGroupProject
         {
             this.btnView = new System.Windows.Forms.Button();
             this.btnViewShows = new System.Windows.Forms.Button();
+            this.btnBuyTickets = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(78, 108);
+            this.btnView.Location = new System.Drawing.Point(80, 48);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(162, 67);
             this.btnView.TabIndex = 1;
@@ -45,7 +46,7 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnViewShows
             // 
-            this.btnViewShows.Location = new System.Drawing.Point(78, 237);
+            this.btnViewShows.Location = new System.Drawing.Point(80, 177);
             this.btnViewShows.Name = "btnViewShows";
             this.btnViewShows.Size = new System.Drawing.Size(162, 67);
             this.btnViewShows.TabIndex = 2;
@@ -53,11 +54,22 @@ namespace CIS3309_TheatreGroupProject
             this.btnViewShows.UseVisualStyleBackColor = true;
             this.btnViewShows.Click += new System.EventHandler(this.btnViewShows_Click);
             // 
+            // btnBuyTickets
+            // 
+            this.btnBuyTickets.Location = new System.Drawing.Point(80, 312);
+            this.btnBuyTickets.Name = "btnBuyTickets";
+            this.btnBuyTickets.Size = new System.Drawing.Size(162, 67);
+            this.btnBuyTickets.TabIndex = 3;
+            this.btnBuyTickets.Text = "Buy Tickets";
+            this.btnBuyTickets.UseVisualStyleBackColor = true;
+            this.btnBuyTickets.Click += new System.EventHandler(this.btnBuyTickets_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(330, 450);
+            this.Controls.Add(this.btnBuyTickets);
             this.Controls.Add(this.btnViewShows);
             this.Controls.Add(this.btnView);
             this.Name = "frmMain";
@@ -69,6 +81,7 @@ namespace CIS3309_TheatreGroupProject
         #endregion
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnViewShows;
+        private System.Windows.Forms.Button btnBuyTickets;
     }
 }
 

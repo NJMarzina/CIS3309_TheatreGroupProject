@@ -42,16 +42,5 @@ namespace CIS3309_TheatreGroupProject
                 this.price = value;
             }
         }
-
-        public double Calculate(Ticket t, int quantity)
-        {
-            double subtotal = 0;
-
-            subtotal += t.Price;
-            subtotal *= quantity;
-            subtotal *= 1.07;
-
-            return subtotal;
-        }
     }
 }

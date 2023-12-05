@@ -61,6 +61,12 @@
     <Compile Include="frmAddShow.Designer.cs">
       <DependentUpon>frmAddShow.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuyTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyTickets.Designer.cs">
+      <DependentUpon>frmBuyTickets.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmployeeSignin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,7 @@
     </Compile>
     <Compile Include="Movie.cs" />
     <Compile Include="MovieManageSystem.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Show.cs" />
@@ -110,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddShow.resx">
       <DependentUpon>frmAddShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyTickets.resx">
+      <DependentUpon>frmBuyTickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeSignin.resx">
       <DependentUpon>frmEmployeeSignin.cs</DependentUpon>
