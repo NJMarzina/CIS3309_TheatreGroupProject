@@ -14,7 +14,7 @@ namespace CIS3309_TheatreGroupProject
         public static OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Movies.accdb");
 
 
-        public static DataTable LoadMoiveDB()
+        public static DataTable LoadMovieDB()
         {
             
             OleDbDataAdapter myDataAdapter;
