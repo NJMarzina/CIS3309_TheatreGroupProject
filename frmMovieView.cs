@@ -15,7 +15,7 @@ namespace CIS3309_TheatreGroupProject
         public frmMovieView()
         {
             InitializeComponent();
-            dgvMovie.DataSource = MovieManageSystem.LoadMoiveDB();
+            dgvMovie.DataSource = MovieManageSystem.LoadMovieDB();
             cbxGenre.DataSource = Movie.GetGenreArray();
         }
 
@@ -30,7 +30,7 @@ namespace CIS3309_TheatreGroupProject
                 string title = (string)dgvMovie.SelectedRows[0].Cells["Title"].Value;
                 MessageBox.Show("Selected for delete: " + title);
                 MovieManageSystem.DeleteMovieDB(title);
-                dgvMovie.DataSource = MovieManageSystem.LoadMoiveDB();
+                dgvMovie.DataSource = MovieManageSystem.LoadMovieDB();
             }
 
         }
@@ -79,7 +79,7 @@ namespace CIS3309_TheatreGroupProject
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            dgvMovie.DataSource = MovieManageSystem.LoadMoiveDB();
+            dgvMovie.DataSource = MovieManageSystem.LoadMovieDB();
 
         }
 

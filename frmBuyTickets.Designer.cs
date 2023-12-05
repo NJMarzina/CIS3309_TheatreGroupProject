@@ -538,6 +538,7 @@ namespace CIS3309_TheatreGroupProject
             this.btnAddToCart.TabIndex = 46;
             this.btnAddToCart.Text = "Add to Cart";
             this.btnAddToCart.UseVisualStyleBackColor = true;
+            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
             // 
             // frmBuyTickets
             // 
