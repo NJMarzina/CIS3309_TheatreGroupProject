@@ -26,6 +26,12 @@ namespace CIS3309_TheatreGroupProject
             Director = director;
             Description = description;
         }
+
+        public static Array GetGenreArray()
+        {
+            Array array = Enum.GetValues(typeof(Movie.Genre));
+            return array;
+        }
     }
 
     

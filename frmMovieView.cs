@@ -16,7 +16,7 @@ namespace CIS3309_TheatreGroupProject
         {
             InitializeComponent();
             dgvMovie.DataSource = MovieManageSystem.LoadMoiveDB();
-            cbxGenre.DataSource = Enum.GetValues(typeof(Movie.Genre));
+            cbxGenre.DataSource = Movie.GetGenreArray();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

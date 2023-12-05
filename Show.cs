@@ -25,5 +25,11 @@ namespace CIS3309_TheatreGroupProject
             this.MovieTitle = movieTitle;
             this.ShowTime = showTime;
         }
+
+        public static Array GetTimeSlotArray()
+        {
+            Array array = Enum.GetValues(typeof(TimeSlot));
+            return array;
+        }
     }
 }

@@ -15,7 +15,8 @@ namespace CIS3309_TheatreGroupProject
         public frmAddShow()
         {
             InitializeComponent();
-            cbxTimeSlot.DataSource = Enum.GetValues(typeof(Show.TimeSlot));
+            
+            cbxTimeSlot.DataSource = CIS3309_TheatreGroupProject.Show.GetTimeSlotArray();
             cbxMovieTitle.DataSource = MovieManageSystem.GetMovieTitles();
         }
 

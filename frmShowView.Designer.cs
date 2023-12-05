@@ -31,8 +31,8 @@ namespace CIS3309_TheatreGroupProject
         {
             this.dgvShows = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnFilterMovie = new System.Windows.Forms.Button();
+            this.btnAddShow = new System.Windows.Forms.Button();
             this.cbxMovieTitle = new System.Windows.Forms.ComboBox();
             this.cbxFilterTime = new System.Windows.Forms.ComboBox();
             this.btnFilterTime = new System.Windows.Forms.Button();
@@ -59,25 +59,25 @@ namespace CIS3309_TheatreGroupProject
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnFilterMovie
             // 
-            this.button4.Location = new System.Drawing.Point(197, 375);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(169, 55);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Filter By Movie";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnFilterMovie.Location = new System.Drawing.Point(197, 375);
+            this.btnFilterMovie.Name = "btnFilterMovie";
+            this.btnFilterMovie.Size = new System.Drawing.Size(169, 55);
+            this.btnFilterMovie.TabIndex = 4;
+            this.btnFilterMovie.Text = "Filter By Movie";
+            this.btnFilterMovie.UseVisualStyleBackColor = true;
+            this.btnFilterMovie.Click += new System.EventHandler(this.button4_Click);
             // 
-            // btnAdd
+            // btnAddShow
             // 
-            this.btnAdd.Location = new System.Drawing.Point(372, 375);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(148, 55);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.Text = "Add Show";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAddShow.Location = new System.Drawing.Point(372, 375);
+            this.btnAddShow.Name = "btnAddShow";
+            this.btnAddShow.Size = new System.Drawing.Size(148, 55);
+            this.btnAddShow.TabIndex = 5;
+            this.btnAddShow.Text = "Add Show";
+            this.btnAddShow.UseVisualStyleBackColor = true;
+            this.btnAddShow.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cbxMovieTitle
             // 
@@ -112,8 +112,8 @@ namespace CIS3309_TheatreGroupProject
             this.Controls.Add(this.btnFilterTime);
             this.Controls.Add(this.cbxFilterTime);
             this.Controls.Add(this.cbxMovieTitle);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnAddShow);
+            this.Controls.Add(this.btnFilterMovie);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.dgvShows);
             this.Name = "frmShowView";
@@ -127,8 +127,8 @@ namespace CIS3309_TheatreGroupProject
 
         private System.Windows.Forms.DataGridView dgvShows;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnFilterMovie;
+        private System.Windows.Forms.Button btnAddShow;
         private System.Windows.Forms.ComboBox cbxMovieTitle;
         private System.Windows.Forms.ComboBox cbxFilterTime;
         private System.Windows.Forms.Button btnFilterTime;
