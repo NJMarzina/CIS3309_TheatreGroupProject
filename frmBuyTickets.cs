@@ -34,7 +34,6 @@ namespace CIS3309_TheatreGroupProject
             string timeSlot = cbxTimeSlots.SelectedItem.ToString();
             TimeSlot t = TimeSlot.SLOT_0800_1130;
             List<string> seats = new List<string>();
-            List<string> everySeat = new List<string>();
             //Enum.Parse(typeof(TimeSlot), timeSlot);
 
             if (timeSlot == "SLOT_0800_1130")
@@ -87,23 +86,6 @@ namespace CIS3309_TheatreGroupProject
             if (cbd9.Checked) seats.Add("d9");
             if (cbd10.Checked) seats.Add("d10");
 
-            //everySeat.Add("a1");    //go through and add all 40 seats
-
-            for (char row = 'a'; row <= 'd'; row++)
-            {
-                for (int x = 1; x <= 10; x++)
-                {
-                    string seatLabel = $"{row}{x}";
-                    everySeat.Add(seatLabel);
-                }
-            }
-
-            MessageBox.Show(seats[0].ToString());
-            MessageBox.Show(movie);
-            MessageBox.Show(timeSlot);
-
-            int quantity = seats.Count;
-
             //movie selected
             //time selected
 
@@ -113,28 +95,8 @@ namespace CIS3309_TheatreGroupProject
 
             //update sql that if seat location is in seats list then update from "Open" to "Full"
 
-            OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
-
-            for(int x = 0; x < everySeat.Count; x++)
-            {
-                //for (int i = 0; i < seats.Count; i++)    //add another loop that iterates through all 40 seats and checks through loop so we skip manual
-                //{
-                    if (seats.Contains("a1"))
-                    {
-                        string strSQL = "UPDATE ShowsTable SET a1 = 'full' WHERE Movie = @movie AND ShowTime = @timeSlot";
-
-                        OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
-
-                        myConnection.Open();
-
-                        //myCommand.Parameters.AddWithValue("@newValue", "full");
-                        //myCommand.Parameters.AddWithValue("@name", seats[i]);
-
-                        myCommand.ExecuteNonQuery();
-                        myConnection.Close();
-                    }
-               // }
-            }
+            Show s = new Show();
+            s.UpdateShow(seats, movie, timeSlot);
         }
     }
 }

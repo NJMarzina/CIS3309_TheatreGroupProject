@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,10 @@ namespace CIS3309_TheatreGroupProject
             SLOT_1830_2200
         }
 
-        public List<object> seats = new List<object>();
+        public Show()
+        {
+
+        }
 
         public Show(TheaterRoom theaterRoom, string movieTitle, TimeSlot showTime){
             this.TheaterRoom = theaterRoom;
@@ -33,16 +37,207 @@ namespace CIS3309_TheatreGroupProject
                 string c1, string c2, string c3, string c4, string c5, string c6, string c7, string c8, string c9, string c10,
                 string d1, string d2, string d3, string d4, string d5, string d6, string d7, string d8, string d9, string d10)
         {
-            seats.Add(theaterRoom);
-            seats.Add(movieTitle);
-            seats.Add(showTime);
-            seats.AddRange(new[]
+            TheaterRoom.SeatStatus status;
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a1, out status))
             {
-                a1, a2, a3, a4, a5, a6, a7, a8, a9, a10,
-                b1, b2, b3, b4, b5, b6, b7, b8, b9, b10,
-                c1, c2, c3, c4, c5, c6, c7, c8, c9, c10,
-                d1, d2, d3, d4, d5, d6, d7, d8, d9, d10
-            });
+                theaterRoom.seatChart["a1"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a2, out status))
+            {
+                theaterRoom.seatChart["a2"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a3, out status))
+            {
+                theaterRoom.seatChart["a3"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a4, out status))
+            {
+                theaterRoom.seatChart["a4"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a5, out status))
+            {
+                theaterRoom.seatChart["a5"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a6, out status))
+            {
+                theaterRoom.seatChart["a6"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a7, out status))
+            {
+                theaterRoom.seatChart["a7"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a8, out status))
+            {
+                theaterRoom.seatChart["a8"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a9, out status))
+            {
+                theaterRoom.seatChart["a9"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(a10, out status))
+            {
+                theaterRoom.seatChart["a10"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b1, out status))
+            {
+                theaterRoom.seatChart["b1"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b2, out status))
+            {
+                theaterRoom.seatChart["b2"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b3, out status))
+            {
+                theaterRoom.seatChart["b3"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b4, out status))
+            {
+                theaterRoom.seatChart["b4"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b5, out status))
+            {
+                theaterRoom.seatChart["b5"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b6, out status))
+            {
+                theaterRoom.seatChart["b6"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b7, out status))
+            {
+                theaterRoom.seatChart["b7"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b8, out status))
+            {
+                theaterRoom.seatChart["b8"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b9, out status))
+            {
+                theaterRoom.seatChart["b9"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(b10, out status))
+            {
+                theaterRoom.seatChart["b10"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c1, out status))
+            {
+                theaterRoom.seatChart["c1"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c2, out status))
+            {
+                theaterRoom.seatChart["c2"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c3, out status))
+            {
+                theaterRoom.seatChart["c3"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c4, out status))
+            {
+                theaterRoom.seatChart["c4"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c5, out status))
+            {
+                theaterRoom.seatChart["c5"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c6, out status))
+            {
+                theaterRoom.seatChart["c6"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c7, out status))
+            {
+                theaterRoom.seatChart["c7"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c8, out status))
+            {
+                theaterRoom.seatChart["c8"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c9, out status))
+            {
+                theaterRoom.seatChart["c9"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(c10, out status))
+            {
+                theaterRoom.seatChart["c10"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d1, out status))
+            {
+                theaterRoom.seatChart["d1"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d2, out status))
+            {
+                theaterRoom.seatChart["d2"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d3, out status))
+            {
+                theaterRoom.seatChart["d3"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d4, out status))
+            {
+                theaterRoom.seatChart["d4"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d5, out status))
+            {
+                theaterRoom.seatChart["d5"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d6, out status))
+            {
+                theaterRoom.seatChart["d6"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d7, out status))
+            {
+                theaterRoom.seatChart["d7"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d8, out status))
+            {
+                theaterRoom.seatChart["d8"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d9, out status))
+            {
+                theaterRoom.seatChart["d9"] = status;
+            }
+
+            if (Enum.TryParse<TheaterRoom.SeatStatus>(d10, out status))
+            {
+                theaterRoom.seatChart["d10"] = status;
+            }
         }
 
         public static Array GetTimeSlotArray()
@@ -51,11 +246,23 @@ namespace CIS3309_TheatreGroupProject
             return array;
         }
 
-        public List<object>Seats
+        public void UpdateShow(List<String>seats, String movie, String timeSlot)
         {
-            get
+            OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
+
+            for (int x = 0; x < 40; x++)    //update for all a1-a10, b1-b10, c1-c10, d1-d10
             {
-                return this.seats;
+                if (seats.Contains("a1"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a1 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
             }
         }
     }
