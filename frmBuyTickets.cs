@@ -105,12 +105,12 @@ namespace CIS3309_TheatreGroupProject
             {
                 if (seats.Contains("a1"))
                 {
-                    string strSQL = $"UPDATE ShowsTable SET a1 = full WHERE Seat = a1";
+                    string strSQL = "UPDATE ShowsTable SET a1 = 'full' WHERE a1 = 'empty'";
 
                     OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
 
-                    myCommand.Parameters.AddWithValue("@newValue", "full");
-                    myCommand.Parameters.AddWithValue("@name", seats[i]);
+                    //myCommand.Parameters.AddWithValue("@newValue", "full");
+                    //myCommand.Parameters.AddWithValue("@name", seats[i]);
 
                     myCommand.ExecuteNonQuery();
                     myConnection.Close();
