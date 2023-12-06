@@ -98,7 +98,9 @@ namespace CIS3309_TheatreGroupProject
                 }
             }
 
-            MessageBox.Show(everySeat.ToString());
+            MessageBox.Show(seats[0].ToString());
+            MessageBox.Show(movie);
+            MessageBox.Show(timeSlot);
 
             int quantity = seats.Count;
 
@@ -117,9 +119,9 @@ namespace CIS3309_TheatreGroupProject
             {
                 //for (int i = 0; i < seats.Count; i++)    //add another loop that iterates through all 40 seats and checks through loop so we skip manual
                 //{
-                    if (seats.Contains(everySeat[x]))
+                    if (seats.Contains("a1"))
                     {
-                        string strSQL = "UPDATE ShowsTable SET $everySeat[x] = 'full' WHERE $everySeat[x] = 'open' AND Movie = @movie AND ShowTime = @timeSlot";
+                        string strSQL = "UPDATE ShowsTable SET a1 = 'full' WHERE Movie = @movie AND ShowTime = @timeSlot";
 
                         OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
 
