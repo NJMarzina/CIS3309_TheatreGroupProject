@@ -119,7 +119,7 @@ namespace CIS3309_TheatreGroupProject
                 //{
                     if (seats.Contains(everySeat[x]))
                     {
-                        string strSQL = "UPDATE ShowsTable SET $everySeat[x] = 'full' WHERE $everySeat[x] = 'empty' AND Movie = @movie AND ShowTime = @timeSlot";
+                        string strSQL = "UPDATE ShowsTable SET $everySeat[x] = 'full' WHERE $everySeat[x] = 'open' AND Movie = @movie AND ShowTime = @timeSlot";
 
                         OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
 
