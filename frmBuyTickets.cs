@@ -87,7 +87,18 @@ namespace CIS3309_TheatreGroupProject
             if (cbd9.Checked) seats.Add("d9");
             if (cbd10.Checked) seats.Add("d10");
 
-            everySeat.Add("a1");    //go through and add all 40 seats
+            //everySeat.Add("a1");    //go through and add all 40 seats
+
+            for (char row = 'a'; row <= 'd'; row++)
+            {
+                for (int x = 1; x <= 10; x++)
+                {
+                    string seatLabel = $"{row}{x}";
+                    everySeat.Add(seatLabel);
+                }
+            }
+
+            MessageBox.Show(everySeat.ToString());
 
             int quantity = seats.Count;
 
@@ -102,22 +113,25 @@ namespace CIS3309_TheatreGroupProject
 
             OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
 
-            myConnection.Open();
-
-            for(int i = 0; i < seats.Count; i++)    //add another loop that iterates through all 40 seats and checks through loop so we skip manual
+            for(int x = 0; x < everySeat.Count; x++)
             {
-                if (seats.Contains("a1"))
-                {
-                    string strSQL = "UPDATE ShowsTable SET a1 = 'full' WHERE a1 = 'empty'";
+                //for (int i = 0; i < seats.Count; i++)    //add another loop that iterates through all 40 seats and checks through loop so we skip manual
+                //{
+                    if (seats.Contains(everySeat[x]))
+                    {
+                        string strSQL = "UPDATE ShowsTable SET $everySeat[x] = 'full' WHERE $everySeat[x] = 'empty' AND Movie = @movie AND ShowTime = @timeSlot";
 
-                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+                        OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
 
-                    //myCommand.Parameters.AddWithValue("@newValue", "full");
-                    //myCommand.Parameters.AddWithValue("@name", seats[i]);
+                        myConnection.Open();
 
-                    myCommand.ExecuteNonQuery();
-                    myConnection.Close();
-                }
+                        //myCommand.Parameters.AddWithValue("@newValue", "full");
+                        //myCommand.Parameters.AddWithValue("@name", seats[i]);
+
+                        myCommand.ExecuteNonQuery();
+                        myConnection.Close();
+                    }
+               // }
             }
         }
     }
