@@ -29,7 +29,7 @@ namespace CIS3309_TheatreGroupProject
 
             strSQL = "SELECT * FROM ShowsTable";
             myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
-            showDataSet = new DataSet("MoviesTable");
+            showDataSet = new DataSet("ShowTable");
             myDataAdapter.Fill(showDataSet, "ShowTable");
 
             showTable = showDataSet.Tables["ShowTable"];
@@ -80,9 +80,9 @@ namespace CIS3309_TheatreGroupProject
         //////////////////////////////////////////////  DELETE  ///////////////////////////////////////
 
 
-        public static void DeleteShowDB(string title)
+        public static void DeleteShowDB(string num)
         {
-            string strSQL = "DELETE FROM ShowsTable WHERE Moive ='" + title + "'";
+            string strSQL = "DELETE FROM ShowsTable WHERE Show ='" + num + "'";
             OleDbCommand deleteCommand = new OleDbCommand(strSQL, myConnection);
             try
             {
@@ -117,15 +117,33 @@ namespace CIS3309_TheatreGroupProject
             myConnection.Close();
         }
 
-        public static DataTable FilterShowMoiveDB(String movie)
-        {
-            string strSQL = "SELECT * FROM ShowsTable WHERE Genre = '" + movie + "'";
-            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
-            DataSet movieDataSet = new DataSet("MoivesTable");
-            myDataAdapter.Fill(movieDataSet, "MoviesTable");
 
-            DataTable filteredMovieTable = movieDataSet.Tables["ItemTable"];
-            return filteredMovieTable;
+        /// <summary>
+        /// /////////////////////////////////////////////////// FILTER STATMENTS ////////////////////////////////////////////////
+        /// </summary>
+        /// <param name="movie"></param>
+        /// <returns></returns>
+        public static DataTable FilterShowMovieDB(String movie)
+        {
+            string strSQL = "SELECT * FROM ShowsTable WHERE Movie = '" + movie + "'";
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            DataSet showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable filteredShowTable = showDataSet.Tables["ShowsTable"];
+            return filteredShowTable;
+        }
+
+        public static DataTable FilterShowTimeDB(String time)
+        {
+            time = time.ToString();
+            string strSQL = "SELECT * FROM ShowsTable WHERE ShowTime = '" + time + "'";
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            DataSet showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable filteredShowTable = showDataSet.Tables["ShowTable"];
+            return filteredShowTable;
         }
     }
 }
