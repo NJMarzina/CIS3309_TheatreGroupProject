@@ -43,16 +43,27 @@ namespace CIS3309_TheatreGroupProject
         {
 
             // SQL STATMENT
-           // string strSQL = "INSERT INTO ShowsTable (Title, Genre, Director, Rating, Description, Img)" +
-            //w" VALUES ('" + movie.Title + "','" + movie.MovieGenre + "','" + movie.Director + "','" + movie.Rating + "','" +
-            //movie.Description + "','" + movie.Img + "');";
+            string strSQL = "INSERT INTO ShowsTable ( Room, Movie, ShowTime, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, " +
+                "c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10)" +
+                " VALUES ('" + show.TheaterRoom.room + "', '" + show.MovieTitle + "', '" + show.ShowTime + "', '" + show.TheaterRoom.seatChart["a1"] + "','" + show.TheaterRoom.seatChart["a2"] +
+                "','" + show.TheaterRoom.seatChart["a3"] + "','" + show.TheaterRoom.seatChart["a4"] + "','" + show.TheaterRoom.seatChart["a5"] + "','" + show.TheaterRoom.seatChart["a6"] +
+                "','" + show.TheaterRoom.seatChart["a7"] + "','" + show.TheaterRoom.seatChart["a8"] + "','" + show.TheaterRoom.seatChart["a9"] + "','" + show.TheaterRoom.seatChart["a10"] +
+                "','" + show.TheaterRoom.seatChart["b1"] + "','" + show.TheaterRoom.seatChart["b2"] + "','" + show.TheaterRoom.seatChart["b3"] + "','" + show.TheaterRoom.seatChart["b4"] +
+                "','" + show.TheaterRoom.seatChart["b5"] + "','" + show.TheaterRoom.seatChart["b6"] + "','" + show.TheaterRoom.seatChart["b7"] + "','" + show.TheaterRoom.seatChart["b8"] +
+                "','" + show.TheaterRoom.seatChart["b9"] + "','" + show.TheaterRoom.seatChart["b10"] + "','" + show.TheaterRoom.seatChart["c1"] + "','" + show.TheaterRoom.seatChart["c2"] +
+                "','" + show.TheaterRoom.seatChart["c3"] + "','" + show.TheaterRoom.seatChart["c4"] + "','" + show.TheaterRoom.seatChart["c5"] + "','" + show.TheaterRoom.seatChart["c6"] +
+                "','" + show.TheaterRoom.seatChart["c7"] + "','" + show.TheaterRoom.seatChart["c8"] + "','" + show.TheaterRoom.seatChart["c9"] + "','" + show.TheaterRoom.seatChart["c10"] +
+                "','" + show.TheaterRoom.seatChart["d1"] + "','" + show.TheaterRoom.seatChart["d2"] + "','" + show.TheaterRoom.seatChart["d3"] + "','" + show.TheaterRoom.seatChart["d4"] +
+                "','" + show.TheaterRoom.seatChart["d5"] + "','" + show.TheaterRoom.seatChart["d6"] + "','" + show.TheaterRoom.seatChart["d7"] + "','" + show.TheaterRoom.seatChart["d8"] +
+                "','" + show.TheaterRoom.seatChart["d9"] + "','" + show.TheaterRoom.seatChart["d10"] + "');";
 
-           // OleDbCommand insertCommand = new OleDbCommand(strSQL, myConnection);
+
+            OleDbCommand insertCommand = new OleDbCommand(strSQL, myConnection);
 
             try
             {
                 myConnection.Open();
-                //insertCommand.ExecuteNonQuery();
+                insertCommand.ExecuteNonQuery();
             }
             finally
             {
@@ -76,7 +87,7 @@ namespace CIS3309_TheatreGroupProject
             try
             {
                 myConnection.Open();
-                 deleteCommand.ExecuteNonQuery();
+                deleteCommand.ExecuteNonQuery();
 
             }
             finally
@@ -118,4 +129,4 @@ namespace CIS3309_TheatreGroupProject
         }
     }
 }
-    
+

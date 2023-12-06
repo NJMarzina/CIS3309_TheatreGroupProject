@@ -16,7 +16,7 @@ namespace CIS3309_TheatreGroupProject
         {
             InitializeComponent();
             dgvShows.DataSource = ShowManageSystem.LoadShowsDB();
-            cbxMovieTitle.DataSource = MovieManageSystem.GetMovieTitles(); 
+            cbxMovieTitle.DataSource = MovieManageSystem.GetMovieTitles();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -31,6 +31,8 @@ namespace CIS3309_TheatreGroupProject
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            frmAddShow addAShow = new frmAddShow();
+            addAShow.ShowDialog();
 
         }
 
