@@ -34,6 +34,7 @@ namespace CIS3309_TheatreGroupProject
             string timeSlot = cbxTimeSlots.SelectedItem.ToString();
             TimeSlot t = TimeSlot.SLOT_0800_1130;
             List<string> seats = new List<string>();
+            List<string> everySeat = new List<string>();
             //Enum.Parse(typeof(TimeSlot), timeSlot);
 
             if (timeSlot == "SLOT_0800_1130")
@@ -86,6 +87,8 @@ namespace CIS3309_TheatreGroupProject
             if (cbd9.Checked) seats.Add("d9");
             if (cbd10.Checked) seats.Add("d10");
 
+            everySeat.Add("a1");    //go through and add all 40 seats
+
             int quantity = seats.Count;
 
             //movie selected
@@ -101,7 +104,7 @@ namespace CIS3309_TheatreGroupProject
 
             myConnection.Open();
 
-            for(int i = 0; i < seats.Count; i++)
+            for(int i = 0; i < seats.Count; i++)    //add another loop that iterates through all 40 seats and checks through loop so we skip manual
             {
                 if (seats.Contains("a1"))
                 {
