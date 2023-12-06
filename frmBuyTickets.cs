@@ -96,6 +96,26 @@ namespace CIS3309_TheatreGroupProject
             //if cba1 becomes checked upon submitting button, then a1=full
 
             //update sql that if seat location is in seats list then update from "Open" to "Full"
+
+            OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
+
+            myConnection.Open();
+
+            for(int i = 0; i < seats.Count; i++)
+            {
+                if (seats.Contains("a1"))
+                {
+                    string strSQL = $"UPDATE ShowsTable SET a1 = full WHERE Seat = a1";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myCommand.Parameters.AddWithValue("@newValue", "full");
+                    myCommand.Parameters.AddWithValue("@name", seats[i]);
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+            }
         }
     }
 }
