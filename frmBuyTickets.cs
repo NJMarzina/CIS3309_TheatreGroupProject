@@ -115,7 +115,15 @@ namespace CIS3309_TheatreGroupProject
                 lblDspDescription.Text = row["Description"].ToString();
                 pbxImg.SizeMode = PictureBoxSizeMode.Zoom;
                 pbxImg.Load(row["Img"].ToString());
+                try
+                {
+                    pbxImg.Load(row["Img"].ToString());
+                }
+                catch (Exception BadURL)
+                {
+                    MessageBox.Show("Bad Url");
 
+                }
 
             }
             else
