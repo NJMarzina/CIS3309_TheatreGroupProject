@@ -263,6 +263,438 @@ namespace CIS3309_TheatreGroupProject
                     myCommand.ExecuteNonQuery();
                     myConnection.Close();
                 }
+                if (seats.Contains("a2"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a2 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("a3"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a3 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("a4"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a4 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("a5"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a5 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("a6"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a6 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("a7"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a7 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("a8"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a8 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("a9"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a9 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("a10"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET a10 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+
+                if (seats.Contains("b1"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b1 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b2"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b2 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b3"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b3 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b4"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b4 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b5"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b5 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b6"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b6 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b7"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b7 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b8"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b8 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b9"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b9 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("b10"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET b10 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+
+                if (seats.Contains("c1"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c1 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c2"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c2 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c3"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c3 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c4"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c4 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c5"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c5 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c6"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c6 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c7"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c7 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c8"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c8 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c9"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c9 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("c10"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET c10 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+
+                if (seats.Contains("d1"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d1 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d2"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d2 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d3"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d3 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d4"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d4 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d5"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d5 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d6"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d6 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d7"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d7 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d8"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d8 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d9"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d9 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
+                if (seats.Contains("d10"))
+                {
+                    string strSQL = "UPDATE ShowsTable SET d10 = 'full' WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+                    OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+                    myConnection.Open();
+
+                    myCommand.ExecuteNonQuery();
+                    myConnection.Close();
+                }
             }
         }
     }
