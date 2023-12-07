@@ -138,6 +138,23 @@ namespace CIS3309_TheatreGroupProject
                 return moviesList;
         }
 
+        public static DataTable GetMovie(string title)
+        {
+            OleDbDataAdapter myDataAdapter;
+            DataSet movieDataSet;
+            DataTable movieTable;
+
+            string strSQL = "Select * FROM MoviesTable WHERE Title = '" + title  + "'";
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            movieDataSet = new DataSet("MoviesTable");
+            myDataAdapter.Fill(movieDataSet, "MovieTable");
+
+            movieTable = movieDataSet.Tables["MovieTable"];
+
+             return movieTable;
+
+        }
+
 
     }
 }

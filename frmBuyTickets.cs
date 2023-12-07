@@ -98,5 +98,32 @@ namespace CIS3309_TheatreGroupProject
             Show s = new Show();
             s.UpdateShow(seats, movie, timeSlot);
         }
+
+        private void cbxMovies_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string movie = cbxMovies.SelectedItem.ToString();
+            DataTable movieDisplay = MovieManageSystem.GetMovie(movie);
+            if (movieDisplay.Rows.Count > 0)
+            {
+                
+                DataRow row = movieDisplay.Rows[0];
+
+                lblDspTitle.Text = row["Title"].ToString();
+                lblDspDirector.Text = row["Director"].ToString();
+                lblDspRating.Text = row["Rating"].ToString();
+                lblDspGenre.Text = row["Genre"].ToString();
+                lblDspDescription.Text = row["Description"].ToString();
+                pbxImg.SizeMode = PictureBoxSizeMode.Zoom;
+                pbxImg.Load(row["Img"].ToString());
+
+
+            }
+            else
+            {
+              
+                MessageBox.Show("Movie not found!");
+            }
+
+        }
     }
 }

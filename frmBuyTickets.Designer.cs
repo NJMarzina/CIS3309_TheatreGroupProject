@@ -100,16 +100,17 @@ namespace CIS3309_TheatreGroupProject
             // 
             this.cbxMovies.FormattingEnabled = true;
             this.cbxMovies.Location = new System.Drawing.Point(24, 112);
-            this.cbxMovies.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxMovies.Margin = new System.Windows.Forms.Padding(4);
             this.cbxMovies.Name = "cbxMovies";
             this.cbxMovies.Size = new System.Drawing.Size(224, 32);
             this.cbxMovies.TabIndex = 0;
+            this.cbxMovies.SelectedIndexChanged += new System.EventHandler(this.cbxMovies_SelectedIndexChanged);
             // 
             // cbxTimeSlots
             // 
             this.cbxTimeSlots.FormattingEnabled = true;
             this.cbxTimeSlots.Location = new System.Drawing.Point(24, 204);
-            this.cbxTimeSlots.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxTimeSlots.Margin = new System.Windows.Forms.Padding(4);
             this.cbxTimeSlots.Name = "cbxTimeSlots";
             this.cbxTimeSlots.Size = new System.Drawing.Size(224, 32);
             this.cbxTimeSlots.TabIndex = 1;
@@ -149,7 +150,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba1.AutoSize = true;
             this.cba1.BackColor = System.Drawing.Color.LightGreen;
             this.cba1.Location = new System.Drawing.Point(738, 154);
-            this.cba1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba1.Margin = new System.Windows.Forms.Padding(4);
             this.cba1.Name = "cba1";
             this.cba1.Size = new System.Drawing.Size(22, 21);
             this.cba1.TabIndex = 5;
@@ -160,7 +161,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba2.AutoSize = true;
             this.cba2.BackColor = System.Drawing.Color.LightGreen;
             this.cba2.Location = new System.Drawing.Point(806, 154);
-            this.cba2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba2.Margin = new System.Windows.Forms.Padding(4);
             this.cba2.Name = "cba2";
             this.cba2.Size = new System.Drawing.Size(22, 21);
             this.cba2.TabIndex = 6;
@@ -171,7 +172,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba4.AutoSize = true;
             this.cba4.BackColor = System.Drawing.Color.LightGreen;
             this.cba4.Location = new System.Drawing.Point(939, 154);
-            this.cba4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba4.Margin = new System.Windows.Forms.Padding(4);
             this.cba4.Name = "cba4";
             this.cba4.Size = new System.Drawing.Size(22, 21);
             this.cba4.TabIndex = 8;
@@ -182,7 +183,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba3.AutoSize = true;
             this.cba3.BackColor = System.Drawing.Color.LightGreen;
             this.cba3.Location = new System.Drawing.Point(872, 154);
-            this.cba3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba3.Margin = new System.Windows.Forms.Padding(4);
             this.cba3.Name = "cba3";
             this.cba3.Size = new System.Drawing.Size(22, 21);
             this.cba3.TabIndex = 7;
@@ -193,7 +194,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba8.AutoSize = true;
             this.cba8.BackColor = System.Drawing.Color.LightGreen;
             this.cba8.Location = new System.Drawing.Point(1209, 154);
-            this.cba8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba8.Margin = new System.Windows.Forms.Padding(4);
             this.cba8.Name = "cba8";
             this.cba8.Size = new System.Drawing.Size(22, 21);
             this.cba8.TabIndex = 12;
@@ -204,7 +205,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba7.AutoSize = true;
             this.cba7.BackColor = System.Drawing.Color.LightGreen;
             this.cba7.Location = new System.Drawing.Point(1141, 154);
-            this.cba7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba7.Margin = new System.Windows.Forms.Padding(4);
             this.cba7.Name = "cba7";
             this.cba7.Size = new System.Drawing.Size(22, 21);
             this.cba7.TabIndex = 11;
@@ -215,7 +216,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba6.AutoSize = true;
             this.cba6.BackColor = System.Drawing.Color.LightGreen;
             this.cba6.Location = new System.Drawing.Point(1075, 154);
-            this.cba6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba6.Margin = new System.Windows.Forms.Padding(4);
             this.cba6.Name = "cba6";
             this.cba6.Size = new System.Drawing.Size(22, 21);
             this.cba6.TabIndex = 10;
@@ -226,7 +227,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba5.AutoSize = true;
             this.cba5.BackColor = System.Drawing.Color.LightGreen;
             this.cba5.Location = new System.Drawing.Point(1008, 154);
-            this.cba5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba5.Margin = new System.Windows.Forms.Padding(4);
             this.cba5.Name = "cba5";
             this.cba5.Size = new System.Drawing.Size(22, 21);
             this.cba5.TabIndex = 9;
@@ -237,7 +238,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba10.AutoSize = true;
             this.cba10.BackColor = System.Drawing.Color.LightGreen;
             this.cba10.Location = new System.Drawing.Point(1348, 154);
-            this.cba10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba10.Margin = new System.Windows.Forms.Padding(4);
             this.cba10.Name = "cba10";
             this.cba10.Size = new System.Drawing.Size(22, 21);
             this.cba10.TabIndex = 14;
@@ -248,7 +249,7 @@ namespace CIS3309_TheatreGroupProject
             this.cba9.AutoSize = true;
             this.cba9.BackColor = System.Drawing.Color.LightGreen;
             this.cba9.Location = new System.Drawing.Point(1280, 154);
-            this.cba9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cba9.Margin = new System.Windows.Forms.Padding(4);
             this.cba9.Name = "cba9";
             this.cba9.Size = new System.Drawing.Size(22, 21);
             this.cba9.TabIndex = 13;
@@ -259,7 +260,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb10.AutoSize = true;
             this.cbb10.BackColor = System.Drawing.Color.LightGreen;
             this.cbb10.Location = new System.Drawing.Point(1348, 232);
-            this.cbb10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb10.Margin = new System.Windows.Forms.Padding(4);
             this.cbb10.Name = "cbb10";
             this.cbb10.Size = new System.Drawing.Size(22, 21);
             this.cbb10.TabIndex = 24;
@@ -270,7 +271,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb9.AutoSize = true;
             this.cbb9.BackColor = System.Drawing.Color.LightGreen;
             this.cbb9.Location = new System.Drawing.Point(1280, 232);
-            this.cbb9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb9.Margin = new System.Windows.Forms.Padding(4);
             this.cbb9.Name = "cbb9";
             this.cbb9.Size = new System.Drawing.Size(22, 21);
             this.cbb9.TabIndex = 23;
@@ -281,7 +282,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb8.AutoSize = true;
             this.cbb8.BackColor = System.Drawing.Color.LightGreen;
             this.cbb8.Location = new System.Drawing.Point(1209, 232);
-            this.cbb8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb8.Margin = new System.Windows.Forms.Padding(4);
             this.cbb8.Name = "cbb8";
             this.cbb8.Size = new System.Drawing.Size(22, 21);
             this.cbb8.TabIndex = 22;
@@ -292,7 +293,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb7.AutoSize = true;
             this.cbb7.BackColor = System.Drawing.Color.LightGreen;
             this.cbb7.Location = new System.Drawing.Point(1141, 232);
-            this.cbb7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb7.Margin = new System.Windows.Forms.Padding(4);
             this.cbb7.Name = "cbb7";
             this.cbb7.Size = new System.Drawing.Size(22, 21);
             this.cbb7.TabIndex = 21;
@@ -303,7 +304,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb6.AutoSize = true;
             this.cbb6.BackColor = System.Drawing.Color.LightGreen;
             this.cbb6.Location = new System.Drawing.Point(1075, 232);
-            this.cbb6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb6.Margin = new System.Windows.Forms.Padding(4);
             this.cbb6.Name = "cbb6";
             this.cbb6.Size = new System.Drawing.Size(22, 21);
             this.cbb6.TabIndex = 20;
@@ -314,7 +315,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb5.AutoSize = true;
             this.cbb5.BackColor = System.Drawing.Color.LightGreen;
             this.cbb5.Location = new System.Drawing.Point(1008, 232);
-            this.cbb5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb5.Margin = new System.Windows.Forms.Padding(4);
             this.cbb5.Name = "cbb5";
             this.cbb5.Size = new System.Drawing.Size(22, 21);
             this.cbb5.TabIndex = 19;
@@ -325,7 +326,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb4.AutoSize = true;
             this.cbb4.BackColor = System.Drawing.Color.LightGreen;
             this.cbb4.Location = new System.Drawing.Point(939, 232);
-            this.cbb4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb4.Margin = new System.Windows.Forms.Padding(4);
             this.cbb4.Name = "cbb4";
             this.cbb4.Size = new System.Drawing.Size(22, 21);
             this.cbb4.TabIndex = 18;
@@ -336,7 +337,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb3.AutoSize = true;
             this.cbb3.BackColor = System.Drawing.Color.LightGreen;
             this.cbb3.Location = new System.Drawing.Point(872, 232);
-            this.cbb3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb3.Margin = new System.Windows.Forms.Padding(4);
             this.cbb3.Name = "cbb3";
             this.cbb3.Size = new System.Drawing.Size(22, 21);
             this.cbb3.TabIndex = 17;
@@ -347,7 +348,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb2.AutoSize = true;
             this.cbb2.BackColor = System.Drawing.Color.LightGreen;
             this.cbb2.Location = new System.Drawing.Point(806, 232);
-            this.cbb2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb2.Margin = new System.Windows.Forms.Padding(4);
             this.cbb2.Name = "cbb2";
             this.cbb2.Size = new System.Drawing.Size(22, 21);
             this.cbb2.TabIndex = 16;
@@ -358,7 +359,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbb1.AutoSize = true;
             this.cbb1.BackColor = System.Drawing.Color.LightGreen;
             this.cbb1.Location = new System.Drawing.Point(738, 232);
-            this.cbb1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb1.Margin = new System.Windows.Forms.Padding(4);
             this.cbb1.Name = "cbb1";
             this.cbb1.Size = new System.Drawing.Size(22, 21);
             this.cbb1.TabIndex = 15;
@@ -369,7 +370,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd10.AutoSize = true;
             this.cbd10.BackColor = System.Drawing.Color.LightGreen;
             this.cbd10.Location = new System.Drawing.Point(1348, 390);
-            this.cbd10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd10.Margin = new System.Windows.Forms.Padding(4);
             this.cbd10.Name = "cbd10";
             this.cbd10.Size = new System.Drawing.Size(22, 21);
             this.cbd10.TabIndex = 44;
@@ -380,7 +381,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd9.AutoSize = true;
             this.cbd9.BackColor = System.Drawing.Color.LightGreen;
             this.cbd9.Location = new System.Drawing.Point(1280, 390);
-            this.cbd9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd9.Margin = new System.Windows.Forms.Padding(4);
             this.cbd9.Name = "cbd9";
             this.cbd9.Size = new System.Drawing.Size(22, 21);
             this.cbd9.TabIndex = 43;
@@ -391,7 +392,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd8.AutoSize = true;
             this.cbd8.BackColor = System.Drawing.Color.LightGreen;
             this.cbd8.Location = new System.Drawing.Point(1209, 390);
-            this.cbd8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd8.Margin = new System.Windows.Forms.Padding(4);
             this.cbd8.Name = "cbd8";
             this.cbd8.Size = new System.Drawing.Size(22, 21);
             this.cbd8.TabIndex = 42;
@@ -402,7 +403,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd7.AutoSize = true;
             this.cbd7.BackColor = System.Drawing.Color.LightGreen;
             this.cbd7.Location = new System.Drawing.Point(1141, 390);
-            this.cbd7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd7.Margin = new System.Windows.Forms.Padding(4);
             this.cbd7.Name = "cbd7";
             this.cbd7.Size = new System.Drawing.Size(22, 21);
             this.cbd7.TabIndex = 41;
@@ -413,7 +414,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd6.AutoSize = true;
             this.cbd6.BackColor = System.Drawing.Color.LightGreen;
             this.cbd6.Location = new System.Drawing.Point(1075, 390);
-            this.cbd6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd6.Margin = new System.Windows.Forms.Padding(4);
             this.cbd6.Name = "cbd6";
             this.cbd6.Size = new System.Drawing.Size(22, 21);
             this.cbd6.TabIndex = 40;
@@ -424,7 +425,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd5.AutoSize = true;
             this.cbd5.BackColor = System.Drawing.Color.LightGreen;
             this.cbd5.Location = new System.Drawing.Point(1008, 390);
-            this.cbd5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd5.Margin = new System.Windows.Forms.Padding(4);
             this.cbd5.Name = "cbd5";
             this.cbd5.Size = new System.Drawing.Size(22, 21);
             this.cbd5.TabIndex = 39;
@@ -435,7 +436,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd4.AutoSize = true;
             this.cbd4.BackColor = System.Drawing.Color.LightGreen;
             this.cbd4.Location = new System.Drawing.Point(939, 390);
-            this.cbd4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd4.Margin = new System.Windows.Forms.Padding(4);
             this.cbd4.Name = "cbd4";
             this.cbd4.Size = new System.Drawing.Size(22, 21);
             this.cbd4.TabIndex = 38;
@@ -446,7 +447,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd3.AutoSize = true;
             this.cbd3.BackColor = System.Drawing.Color.LightGreen;
             this.cbd3.Location = new System.Drawing.Point(872, 390);
-            this.cbd3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd3.Margin = new System.Windows.Forms.Padding(4);
             this.cbd3.Name = "cbd3";
             this.cbd3.Size = new System.Drawing.Size(22, 21);
             this.cbd3.TabIndex = 37;
@@ -457,7 +458,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd2.AutoSize = true;
             this.cbd2.BackColor = System.Drawing.Color.LightGreen;
             this.cbd2.Location = new System.Drawing.Point(806, 390);
-            this.cbd2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd2.Margin = new System.Windows.Forms.Padding(4);
             this.cbd2.Name = "cbd2";
             this.cbd2.Size = new System.Drawing.Size(22, 21);
             this.cbd2.TabIndex = 36;
@@ -468,7 +469,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbd1.AutoSize = true;
             this.cbd1.BackColor = System.Drawing.Color.LightGreen;
             this.cbd1.Location = new System.Drawing.Point(738, 390);
-            this.cbd1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbd1.Margin = new System.Windows.Forms.Padding(4);
             this.cbd1.Name = "cbd1";
             this.cbd1.Size = new System.Drawing.Size(22, 21);
             this.cbd1.TabIndex = 35;
@@ -479,7 +480,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc10.AutoSize = true;
             this.cbc10.BackColor = System.Drawing.Color.LightGreen;
             this.cbc10.Location = new System.Drawing.Point(1348, 312);
-            this.cbc10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc10.Margin = new System.Windows.Forms.Padding(4);
             this.cbc10.Name = "cbc10";
             this.cbc10.Size = new System.Drawing.Size(22, 21);
             this.cbc10.TabIndex = 34;
@@ -490,7 +491,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc9.AutoSize = true;
             this.cbc9.BackColor = System.Drawing.Color.LightGreen;
             this.cbc9.Location = new System.Drawing.Point(1280, 312);
-            this.cbc9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc9.Margin = new System.Windows.Forms.Padding(4);
             this.cbc9.Name = "cbc9";
             this.cbc9.Size = new System.Drawing.Size(22, 21);
             this.cbc9.TabIndex = 33;
@@ -501,7 +502,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc8.AutoSize = true;
             this.cbc8.BackColor = System.Drawing.Color.LightGreen;
             this.cbc8.Location = new System.Drawing.Point(1209, 312);
-            this.cbc8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc8.Margin = new System.Windows.Forms.Padding(4);
             this.cbc8.Name = "cbc8";
             this.cbc8.Size = new System.Drawing.Size(22, 21);
             this.cbc8.TabIndex = 32;
@@ -512,7 +513,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc7.AutoSize = true;
             this.cbc7.BackColor = System.Drawing.Color.LightGreen;
             this.cbc7.Location = new System.Drawing.Point(1141, 312);
-            this.cbc7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc7.Margin = new System.Windows.Forms.Padding(4);
             this.cbc7.Name = "cbc7";
             this.cbc7.Size = new System.Drawing.Size(22, 21);
             this.cbc7.TabIndex = 31;
@@ -523,7 +524,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc6.AutoSize = true;
             this.cbc6.BackColor = System.Drawing.Color.LightGreen;
             this.cbc6.Location = new System.Drawing.Point(1075, 312);
-            this.cbc6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc6.Margin = new System.Windows.Forms.Padding(4);
             this.cbc6.Name = "cbc6";
             this.cbc6.Size = new System.Drawing.Size(22, 21);
             this.cbc6.TabIndex = 30;
@@ -534,7 +535,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc5.AutoSize = true;
             this.cbc5.BackColor = System.Drawing.Color.LightGreen;
             this.cbc5.Location = new System.Drawing.Point(1008, 312);
-            this.cbc5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc5.Margin = new System.Windows.Forms.Padding(4);
             this.cbc5.Name = "cbc5";
             this.cbc5.Size = new System.Drawing.Size(22, 21);
             this.cbc5.TabIndex = 29;
@@ -545,7 +546,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc4.AutoSize = true;
             this.cbc4.BackColor = System.Drawing.Color.LightGreen;
             this.cbc4.Location = new System.Drawing.Point(939, 312);
-            this.cbc4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc4.Margin = new System.Windows.Forms.Padding(4);
             this.cbc4.Name = "cbc4";
             this.cbc4.Size = new System.Drawing.Size(22, 21);
             this.cbc4.TabIndex = 28;
@@ -556,7 +557,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc3.AutoSize = true;
             this.cbc3.BackColor = System.Drawing.Color.LightGreen;
             this.cbc3.Location = new System.Drawing.Point(872, 312);
-            this.cbc3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc3.Margin = new System.Windows.Forms.Padding(4);
             this.cbc3.Name = "cbc3";
             this.cbc3.Size = new System.Drawing.Size(22, 21);
             this.cbc3.TabIndex = 27;
@@ -567,7 +568,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc2.AutoSize = true;
             this.cbc2.BackColor = System.Drawing.Color.LightGreen;
             this.cbc2.Location = new System.Drawing.Point(806, 312);
-            this.cbc2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc2.Margin = new System.Windows.Forms.Padding(4);
             this.cbc2.Name = "cbc2";
             this.cbc2.Size = new System.Drawing.Size(22, 21);
             this.cbc2.TabIndex = 26;
@@ -578,7 +579,7 @@ namespace CIS3309_TheatreGroupProject
             this.cbc1.AutoSize = true;
             this.cbc1.BackColor = System.Drawing.Color.LightGreen;
             this.cbc1.Location = new System.Drawing.Point(738, 312);
-            this.cbc1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbc1.Margin = new System.Windows.Forms.Padding(4);
             this.cbc1.Name = "cbc1";
             this.cbc1.Size = new System.Drawing.Size(22, 21);
             this.cbc1.TabIndex = 25;
@@ -597,7 +598,7 @@ namespace CIS3309_TheatreGroupProject
             // btnAddToCart
             // 
             this.btnAddToCart.Location = new System.Drawing.Point(960, 506);
-            this.btnAddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddToCart.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(188, 82);
             this.btnAddToCart.TabIndex = 46;
@@ -641,7 +642,7 @@ namespace CIS3309_TheatreGroupProject
             this.panel2.Controls.Add(this.lblDspTitle);
             this.panel2.Location = new System.Drawing.Point(453, 605);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(441, 271);
+            this.panel2.Size = new System.Drawing.Size(695, 271);
             this.panel2.TabIndex = 56;
             // 
             // lblDspRating
@@ -807,7 +808,7 @@ namespace CIS3309_TheatreGroupProject
             this.Controls.Add(this.lblFilter);
             this.Controls.Add(this.cbxTimeSlots);
             this.Controls.Add(this.cbxMovies);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBuyTickets";
             this.Text = "frmBuyTickets";
             this.Load += new System.EventHandler(this.frmBuyTickets_Load);

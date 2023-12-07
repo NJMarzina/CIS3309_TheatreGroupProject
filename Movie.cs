@@ -9,7 +9,7 @@ namespace CIS3309_TheatreGroupProject
     class Movie
     {
         public string Title { get; set; }
-        public enum Genre { Horror, Thriller, History, Action, Romance, Comedy }
+        public enum Genre { Horror, Thriller, History, Action, Romance, Comedy, SciFi }
         public Genre MovieGenre { get; set; }  
         public string Img { get; set; }
         public string Rating { get; set; }
