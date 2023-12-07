@@ -91,6 +91,8 @@ namespace CIS3309_TheatreGroupProject
             this.lblDspTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pbxImg = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbxShowDay = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImg)).BeginInit();
@@ -109,7 +111,7 @@ namespace CIS3309_TheatreGroupProject
             // cbxTimeSlots
             // 
             this.cbxTimeSlots.FormattingEnabled = true;
-            this.cbxTimeSlots.Location = new System.Drawing.Point(24, 204);
+            this.cbxTimeSlots.Location = new System.Drawing.Point(261, 198);
             this.cbxTimeSlots.Margin = new System.Windows.Forms.Padding(4);
             this.cbxTimeSlots.Name = "cbxTimeSlots";
             this.cbxTimeSlots.Size = new System.Drawing.Size(224, 32);
@@ -138,7 +140,7 @@ namespace CIS3309_TheatreGroupProject
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(19, 164);
+            this.lblTime.Location = new System.Drawing.Point(256, 158);
             this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(101, 25);
@@ -597,7 +599,7 @@ namespace CIS3309_TheatreGroupProject
             // 
             // btnAddToCart
             // 
-            this.btnAddToCart.Location = new System.Drawing.Point(960, 506);
+            this.btnAddToCart.Location = new System.Drawing.Point(1188, 507);
             this.btnAddToCart.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(188, 82);
@@ -608,13 +610,14 @@ namespace CIS3309_TheatreGroupProject
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(41, 271);
+            this.button1.Location = new System.Drawing.Point(29, 249);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 53);
             this.button1.TabIndex = 47;
             this.button1.Text = "Find Showing";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -642,7 +645,7 @@ namespace CIS3309_TheatreGroupProject
             this.panel2.Controls.Add(this.lblDspTitle);
             this.panel2.Location = new System.Drawing.Point(453, 605);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(695, 271);
+            this.panel2.Size = new System.Drawing.Size(923, 271);
             this.panel2.TabIndex = 56;
             // 
             // lblDspRating
@@ -752,11 +755,33 @@ namespace CIS3309_TheatreGroupProject
             this.pbxImg.TabIndex = 0;
             this.pbxImg.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 158);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 25);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Day of Show:";
+            // 
+            // cbxShowDay
+            // 
+            this.cbxShowDay.FormattingEnabled = true;
+            this.cbxShowDay.Location = new System.Drawing.Point(29, 198);
+            this.cbxShowDay.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxShowDay.Name = "cbxShowDay";
+            this.cbxShowDay.Size = new System.Drawing.Size(224, 32);
+            this.cbxShowDay.TabIndex = 58;
+            this.cbxShowDay.SelectedIndexChanged += new System.EventHandler(this.cbxShowDay_SelectedIndexChanged);
+            // 
             // frmBuyTickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1388, 902);
+            this.Controls.Add(this.cbxShowDay);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
@@ -885,5 +910,7 @@ namespace CIS3309_TheatreGroupProject
         private System.Windows.Forms.Label lblDspTitle;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbxImg;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbxShowDay;
     }
 }

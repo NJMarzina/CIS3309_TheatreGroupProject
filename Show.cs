@@ -12,6 +12,8 @@ namespace CIS3309_TheatreGroupProject
         public TheaterRoom TheaterRoom { get; set; }
         public string MovieTitle { get; set; }
         public TimeSlot ShowTime { get; set; }
+
+        public DateTime ShowDay;
         public enum TimeSlot
         {
             SLOT_0800_1130,
@@ -25,9 +27,10 @@ namespace CIS3309_TheatreGroupProject
 
         }
 
-        public Show(TheaterRoom theaterRoom, string movieTitle, TimeSlot showTime){
+        public Show(TheaterRoom theaterRoom, string movieTitle, DateTime showDay, TimeSlot showTime){
             this.TheaterRoom = theaterRoom;
             this.MovieTitle = movieTitle;
+            this.ShowDay = showDay;
             this.ShowTime = showTime;
         }
 

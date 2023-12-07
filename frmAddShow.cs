@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,23 +27,27 @@ namespace CIS3309_TheatreGroupProject
             TheaterRoom theaterRoom = new TheaterRoom(tbxTheaterRoom.Text);
             StringBuilder seatStatus = new StringBuilder();
 
-            foreach (var kvp in theaterRoom.seatChart)
-            {
-                seatStatus.AppendLine($"Seat {kvp.Key}: {kvp.Value}");
-            }
-
-            // Display the seat status in a MessageBox
-            MessageBox.Show(seatStatus.ToString(), "Seat Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
 
             string movieTitle = cbxMovieTitle.SelectedItem.ToString();
             Show.TimeSlot selectedTimeSlot = (Show.TimeSlot)cbxTimeSlot.SelectedItem;
-            Show show = new Show(theaterRoom, movieTitle, selectedTimeSlot);
-            ShowManageSystem.InsertShowDB(show);
+            DateTime showDay;
 
 
+            ///// GETTING SHOWDAY TO BE IN FORMAT MM/DD/YY   /////////////////////////
+            if (DateTime.TryParseExact(tbxShowDay.Text, "MM/dd/yy", CultureInfo.InvariantCulture, DateTimeStyles.None, out showDay))
+            {
+                Show show = new Show(theaterRoom, movieTitle, showDay, selectedTimeSlot);
+                ShowManageSystem.InsertShowDB(show);
+                MessageBox.Show("Your show has been added");
 
-
+            }
+            else
+            {
+               
+                MessageBox.Show("Invalid date format. Please enter the date in MM/dd/yy format.");
+                
+            }
+        
 
         }
     }

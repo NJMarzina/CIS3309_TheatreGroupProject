@@ -38,13 +38,15 @@ namespace CIS3309_TheatreGroupProject
             this.cbxMovieTitle = new System.Windows.Forms.ComboBox();
             this.cbxTimeSlot = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbxShowDay = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Location = new System.Drawing.Point(181, 205);
+            this.button1.Location = new System.Drawing.Point(181, 229);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 48);
             this.button1.TabIndex = 0;
@@ -62,7 +64,7 @@ namespace CIS3309_TheatreGroupProject
             // 
             // tbxTheaterRoom
             // 
-            this.tbxTheaterRoom.Location = new System.Drawing.Point(136, 15);
+            this.tbxTheaterRoom.Location = new System.Drawing.Point(162, 15);
             this.tbxTheaterRoom.Name = "tbxTheaterRoom";
             this.tbxTheaterRoom.Size = new System.Drawing.Size(165, 29);
             this.tbxTheaterRoom.TabIndex = 2;
@@ -97,7 +99,7 @@ namespace CIS3309_TheatreGroupProject
             // cbxMovieTitle
             // 
             this.cbxMovieTitle.FormattingEnabled = true;
-            this.cbxMovieTitle.Location = new System.Drawing.Point(136, 50);
+            this.cbxMovieTitle.Location = new System.Drawing.Point(162, 50);
             this.cbxMovieTitle.Name = "cbxMovieTitle";
             this.cbxMovieTitle.Size = new System.Drawing.Size(165, 32);
             this.cbxMovieTitle.TabIndex = 8;
@@ -105,7 +107,7 @@ namespace CIS3309_TheatreGroupProject
             // cbxTimeSlot
             // 
             this.cbxTimeSlot.FormattingEnabled = true;
-            this.cbxTimeSlot.Location = new System.Drawing.Point(136, 88);
+            this.cbxTimeSlot.Location = new System.Drawing.Point(162, 87);
             this.cbxTimeSlot.Name = "cbxTimeSlot";
             this.cbxTimeSlot.Size = new System.Drawing.Size(165, 32);
             this.cbxTimeSlot.TabIndex = 9;
@@ -113,16 +115,34 @@ namespace CIS3309_TheatreGroupProject
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.tbxShowDay);
             this.panel1.Controls.Add(this.lblTheaterRoom);
             this.panel1.Controls.Add(this.cbxTimeSlot);
             this.panel1.Controls.Add(this.tbxTheaterRoom);
             this.panel1.Controls.Add(this.cbxMovieTitle);
             this.panel1.Controls.Add(this.lblMovie);
             this.panel1.Controls.Add(this.lblTimeSlot);
-            this.panel1.Location = new System.Drawing.Point(96, 39);
+            this.panel1.Location = new System.Drawing.Point(90, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 142);
+            this.panel1.Size = new System.Drawing.Size(338, 184);
             this.panel1.TabIndex = 10;
+            // 
+            // tbxShowDay
+            // 
+            this.tbxShowDay.Location = new System.Drawing.Point(162, 125);
+            this.tbxShowDay.Name = "tbxShowDay";
+            this.tbxShowDay.Size = new System.Drawing.Size(165, 29);
+            this.tbxShowDay.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 25);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Day(mm/dd/yy):";
             // 
             // frmAddShow
             // 
@@ -152,5 +172,7 @@ namespace CIS3309_TheatreGroupProject
         private System.Windows.Forms.ComboBox cbxMovieTitle;
         private System.Windows.Forms.ComboBox cbxTimeSlot;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbxShowDay;
     }
 }

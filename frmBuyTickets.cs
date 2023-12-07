@@ -124,6 +124,10 @@ namespace CIS3309_TheatreGroupProject
                     MessageBox.Show("Bad Url");
 
                 }
+                ///////////////////////////// change cbx day ////////////
+                ///
+                //cbxShowDay.DataSource = ShowManageSystem.GetShowDayDB(row["Title"].ToString());
+                cbxShowDay.DataSource = ShowManageSystem.GetShowDayArray(ShowManageSystem.LoadShowsDB());
 
             }
             else
@@ -131,6 +135,16 @@ namespace CIS3309_TheatreGroupProject
               
                 MessageBox.Show("Movie not found!");
             }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxShowDay_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
