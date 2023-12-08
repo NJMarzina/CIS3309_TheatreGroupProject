@@ -192,6 +192,28 @@ namespace CIS3309_TheatreGroupProject
             }
         }
 
+        public static Array GetShowTimeArray(DataTable table)
+        {
+            string[] times = new string[table.Rows.Count];
+
+            if (table.Rows.Count > 0)
+            {
+                for (int i = 0; i < table.Rows.Count; i++)
+                {
+                    DataRow row = table.Rows[i];
+                    string time = row["ShowTime"].ToString();
+                    times[i] = time;
+                }
+                times.ToArray<string>();
+                return times;
+            }
+            else
+            {
+                MessageBox.Show("Error in GetShowTimeArray: No rows in the table.");
+                return null;
+            }
+        }
+
 
         ////////////////// METHOD THAT GETS SHOW TIMES FROM MOVIE AND SHOW DAY
     }
