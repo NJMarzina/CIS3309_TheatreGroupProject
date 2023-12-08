@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CIS3309_TheatreGroupProject
 {
-    class Movie
+    public class Movie
     {
         public string Title { get; set; }
         public enum Genre { Horror, Thriller, History, Action, Romance, Comedy, SciFi }
