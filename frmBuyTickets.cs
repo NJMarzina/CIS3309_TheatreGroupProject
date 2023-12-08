@@ -149,33 +149,27 @@ namespace CIS3309_TheatreGroupProject
             OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
             string movie = cbxMovies.SelectedItem.ToString();
             string timeSlot = cbxTimeSlots.SelectedItem.ToString();
-            string showDay = cbxShowDay.SelectedItem.ToString();
+            //string showDay = cbxShowDay.SelectedItem.ToString();
 
             //a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10
 
             string strSQL = "SELECT a1 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
 
-            OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
             DataSet showDataSet = new DataSet("ShowsTable");
-
             myDataAdapter.Fill(showDataSet, "ShowsTable");
 
-            DataTable DaysShowTable = showDataSet.Tables["ShowTable"];  //keeps saying DaysShowTable is null
+            DataTable a1ShowTable = showDataSet.Tables["ShowsTable"];
 
-            //if a1=full then cba1.hide();
-
-            /*
-            foreach (DataRow row in DaysShowTable.Rows)
+            foreach (DataRow row in a1ShowTable.Rows)
             {
-                string a1Value = row["a1"].ToString();
+                string a1 = row["a1"].ToString();
 
-                // Check if a1 is "full" and hide the control accordingly
-                if (a1Value.Equals("full"))
+                if (a1.Equals("full"))
                 {
-                    cba1.Visible = false; // Assuming cba1 is a control that you want to hide
+                    cba1.Hide();
                 }
-            }   */
+            }   
         }
 
         private void cbxShowDay_SelectedIndexChanged(object sender, EventArgs e)
