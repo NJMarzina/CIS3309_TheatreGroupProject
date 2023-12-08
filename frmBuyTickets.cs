@@ -161,7 +161,7 @@ namespace CIS3309_TheatreGroupProject
 
             DataTable a1ShowTable = showDataSet.Tables["ShowsTable"];
 
-            foreach (DataRow row in a1ShowTable.Rows)
+            foreach (DataRow row in a1ShowTable.Rows)   //update for all seats now.
             {
                 string a1 = row["a1"].ToString();
 
