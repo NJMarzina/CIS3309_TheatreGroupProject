@@ -38,11 +38,11 @@ namespace CIS3309_TheatreGroupProject
             }
         }
 
-        public double Calculate(Ticket t, int quantity)
+        public double Calculate(int quantity)
         {
             double subtotal = 0;
 
-            subtotal += t.Price;
+            subtotal += 10;
             subtotal *= quantity;
             subtotal *= 1.07;
 

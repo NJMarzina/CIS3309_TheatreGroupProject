@@ -97,6 +97,10 @@ namespace CIS3309_TheatreGroupProject
 
             Show s = new Show();
             s.UpdateShow(seats, movie, timeSlot);
+
+            Order o = new Order();
+            int quantity = seats.Count;
+            double subtotal = o.Calculate(quantity);    //subtotal for order
         }
 
         private void cbxMovies_SelectedIndexChanged(object sender, EventArgs e)
@@ -129,6 +133,7 @@ namespace CIS3309_TheatreGroupProject
                 //cbxShowDay.DataSource = ShowManageSystem.GetShowDayDB(row["Title"].ToString());
                 cbxShowDay.DataSource = ShowManageSystem.GetShowDayArray(ShowManageSystem.LoadShowsDB());
 
+                cbxTimeSlots.DataSource = ShowManageSystem.GetShowTimeArray(ShowManageSystem.LoadShowsDB());
             }
             else
             {
@@ -138,12 +143,42 @@ namespace CIS3309_TheatreGroupProject
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)  //btnFind
+        {
+            OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
+            string movie = cbxMovies.SelectedItem.ToString();
+            string timeSlot = cbxTimeSlots.SelectedItem.ToString();
+            string showDay = cbxShowDay.SelectedItem.ToString();
+
+            //a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10
+
+            string strSQL = "Select * FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "' AND ShowDay = '" + showDay + "'";
+
+            OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            DataSet showDataSet = new DataSet("ShowsTable");
+
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable DaysShowTable = showDataSet.Tables["ShowTable"];
+
+            foreach (DataRow row in showDataSet.Tables["ShowTable"].Rows)
+            {
+                string a1 = row["a1"].ToString();
+
+                if (a1.Equals("full"))
+                {
+                    MessageBox.Show("a1 is full");
+                }
+            }
+        }
+
+        private void cbxShowDay_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void cbxShowDay_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbxTimeSlots_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

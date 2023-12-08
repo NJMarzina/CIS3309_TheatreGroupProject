@@ -253,7 +253,7 @@ namespace CIS3309_TheatreGroupProject
         {
             OleDbConnection myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Shows.accdb");
 
-            for (int x = 0; x < 40; x++)    //update for all a1-a10, b1-b10, c1-c10, d1-d10
+            for (int x = 0; x < 40; x++)
             {
                 if (seats.Contains("a1"))
                 {
