@@ -24,28 +24,35 @@ namespace CIS3309_TheatreGroupProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TheaterRoom theaterRoom = new TheaterRoom(tbxTheaterRoom.Text);
-            StringBuilder seatStatus = new StringBuilder();
-
-
-            string movieTitle = cbxMovieTitle.SelectedItem.ToString();
-            Show.TimeSlot selectedTimeSlot = (Show.TimeSlot)cbxTimeSlot.SelectedItem;
-            DateTime showDay;
-
-
-            ///// GETTING SHOWDAY TO BE IN FORMAT MM/DD/YY   /////////////////////////
-            if (DateTime.TryParseExact(tbxShowDay.Text, "MM/dd/yy", CultureInfo.InvariantCulture, DateTimeStyles.None, out showDay))
+            if (tbxTheaterRoom.Text == "")
             {
-                Show show = new Show(theaterRoom, movieTitle, showDay, selectedTimeSlot);
-                ShowManageSystem.InsertShowDB(show);
-                MessageBox.Show("Your show has been added");
-
+                MessageBox.Show("Enter all fields");
             }
             else
             {
-               
-                MessageBox.Show("Invalid date format. Please enter the date in MM/dd/yy format.");
-                
+                TheaterRoom theaterRoom = new TheaterRoom(tbxTheaterRoom.Text);
+                StringBuilder seatStatus = new StringBuilder();
+
+
+                string movieTitle = cbxMovieTitle.SelectedItem.ToString();
+                Show.TimeSlot selectedTimeSlot = (Show.TimeSlot)cbxTimeSlot.SelectedItem;
+                DateTime showDay;
+
+
+                ///// GETTING SHOWDAY TO BE IN FORMAT MM/DD/YY   /////////////////////////
+                if (DateTime.TryParseExact(tbxShowDay.Text, "MM/dd/yy", CultureInfo.InvariantCulture, DateTimeStyles.None, out showDay))
+                {
+                    Show show = new Show(theaterRoom, movieTitle, showDay, selectedTimeSlot);
+                    ShowManageSystem.InsertShowDB(show);
+                    MessageBox.Show("Your show has been added");
+
+                }
+                else
+                {
+
+                    MessageBox.Show("Invalid date format. Please enter the date in MM/dd/yy format.");
+
+                }
             }
         
 

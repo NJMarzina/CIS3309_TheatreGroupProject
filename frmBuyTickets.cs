@@ -131,9 +131,10 @@ namespace CIS3309_TheatreGroupProject
                 ///////////////////////////// change cbx day ////////////
                 ///
                 //cbxShowDay.DataSource = ShowManageSystem.GetShowDayDB(row["Title"].ToString());
-                cbxShowDay.DataSource = ShowManageSystem.GetShowDayArray(ShowManageSystem.LoadShowsDB());
+                cbxShowDay.DataSource = ShowManageSystem.GetShowDayDB(cbxMovies.SelectedItem.ToString());
+               //cbxShowDay.DataSource = ShowManageSystem.GetShowDayArray(ShowManageSystem.GetShowDayDB());
 
-                cbxTimeSlots.DataSource = ShowManageSystem.GetShowTimeArray(ShowManageSystem.LoadShowsDB());
+                //cbxTimeSlots.DataSource = ShowManageSystem.GetShowTimeArray(ShowManageSystem.LoadShowsDB());
             }
             else
             {
