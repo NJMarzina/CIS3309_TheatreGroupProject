@@ -81,10 +81,11 @@ namespace CIS3309_TheatreGroupProject
         //////////////////////////////////////////////  DELETE  ///////////////////////////////////////
 
 
-        public static void DeleteShowDB(string num)
+        public static void DeleteShowDB(int num)
         {
-            string strSQL = "DELETE FROM ShowsTable WHERE Show ='" + num + "'";
+            string strSQL = "DELETE FROM ShowsTable WHERE Show = ?";
             OleDbCommand deleteCommand = new OleDbCommand(strSQL, myConnection);
+            deleteCommand.Parameters.AddWithValue("@ShowParam", num);
             try
             {
                 myConnection.Open();
@@ -137,15 +138,15 @@ namespace CIS3309_TheatreGroupProject
 
         public static DataTable FilterShowTimeDB(String time)
         {
-            time = time.ToString();
             string strSQL = "SELECT * FROM ShowsTable WHERE ShowTime = '" + time + "'";
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
             DataSet showDataSet = new DataSet("ShowsTable");
             myDataAdapter.Fill(showDataSet, "ShowsTable");
 
-            DataTable filteredShowTable = showDataSet.Tables["ShowTable"];
+            DataTable filteredShowTable = showDataSet.Tables["ShowsTable"];
             return filteredShowTable;
         }
+
 
         ///////////////////// METHOD THE GETS THE SHOW DAYS OF A CERTAIN MOVIE AND PUTS THEM IN A LIST OR ARRAY
         public static Array GetShowDayDB(String movieTitle)

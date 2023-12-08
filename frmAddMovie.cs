@@ -25,8 +25,12 @@ namespace CIS3309_TheatreGroupProject
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Movie newMovie = new Movie(tbxMovie.Text, (Movie.Genre)cbxGenre.SelectedItem, tbxDirector.Text, tbxRating.Text, tbxDescription.Text, tbxImg.Text);
-            MovieManageSystem.InsertMovieDB(newMovie);
+            if ((Movie.Genre)cbxGenre.SelectedItem == null || tbxDirector.Text == "" ||tbxRating.Text == "" || tbxDescription.Text == "" || tbxImg.Text == "") {
+                MessageBox.Show("Ensure all fields are entered correctly");
+            
+            } else {
+                Movie newMovie = new Movie(tbxMovie.Text, (Movie.Genre)cbxGenre.SelectedItem, tbxDirector.Text, tbxRating.Text, tbxDescription.Text, tbxImg.Text);
+                MovieManageSystem.InsertMovieDB(newMovie); }
             
         }
 
