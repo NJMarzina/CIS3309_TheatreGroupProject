@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CIS3309_TheatreGroupProject
 {
-    class TheaterRoom
+    public class TheaterRoom
     {
         public enum SeatStatus { open, full }
         public string room { get; set; }
@@ -27,26 +27,6 @@ namespace CIS3309_TheatreGroupProject
                     seatChart.Add(key, SeatStatus.open);
                 }
             }
-        }
-
-
-
-
-        public SeatStatus changeSeatStatus(string seat)
-        {
-
-            if (seatChart.ContainsKey(seat))
-            {
-
-                return seatChart[seat];
-            }
-            else
-            {
-                throw new Exception("No seat with that name");
-
-            }
-
-
         }
 
 

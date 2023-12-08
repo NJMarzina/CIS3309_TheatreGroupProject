@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CIS3309_TheatreGroupProject
 {
-    class Show
+    public class Show
     {
         public TheaterRoom TheaterRoom { get; set; }
         public string MovieTitle { get; set; }
