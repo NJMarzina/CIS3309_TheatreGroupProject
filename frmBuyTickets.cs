@@ -169,7 +169,709 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cba1.Hide();
                 }
-            }   
+            }
+
+            strSQL = "SELECT a2 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a2ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a2ShowTable.Rows)   //update for all seats now.
+            {
+                string a2 = row["a2"].ToString();
+
+                if (a2.Equals("full"))
+                {
+                    cba2.Hide();
+                }
+            }
+
+            strSQL = "SELECT a3 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a3ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a3ShowTable.Rows)   //update for all seats now.
+            {
+                string a3 = row["a3"].ToString();
+
+                if (a3.Equals("full"))
+                {
+                    cba3.Hide();
+                }
+            }
+
+            strSQL = "SELECT a4 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a4ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a4ShowTable.Rows)
+            {
+                string a4 = row["a4"].ToString();
+
+                if (a4.Equals("full"))
+                {
+                    cba4.Hide();
+                }
+            }
+
+            strSQL = "SELECT a5 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a5ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a5ShowTable.Rows)
+            {
+                string a5 = row["a5"].ToString();
+
+                if (a5.Equals("full"))
+                {
+                    cba5.Hide();
+                }
+            }
+
+            strSQL = "SELECT a6 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a6ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a6ShowTable.Rows)
+            {
+                string a6 = row["a6"].ToString();
+
+                if (a6.Equals("full"))
+                {
+                    cba6.Hide();
+                }
+            }
+
+            strSQL = "SELECT a7 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a7ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a7ShowTable.Rows)
+            {
+                string a7 = row["a7"].ToString();
+
+                if (a7.Equals("full"))
+                {
+                    cba7.Hide();
+                }
+            }
+
+            strSQL = "SELECT a8 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a8ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a8ShowTable.Rows)
+            {
+                string a8 = row["a8"].ToString();
+
+                if (a8.Equals("full"))
+                {
+                    cba8.Hide();
+                }
+            }
+
+            strSQL = "SELECT a9 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a9ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a9ShowTable.Rows)
+            {
+                string a9 = row["a9"].ToString();
+
+                if (a9.Equals("full"))
+                {
+                    cba9.Hide();
+                }
+            }
+
+            strSQL = "SELECT a10 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable a10ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in a10ShowTable.Rows)
+            {
+                string a10 = row["a10"].ToString();
+
+                if (a10.Equals("full"))
+                {
+                    cba10.Hide();
+                }
+            }
+
+            strSQL = "SELECT b1 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b1ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b1ShowTable.Rows)
+            {
+                string b1 = row["b1"].ToString();
+
+                if (b1.Equals("full"))
+                {
+                    cbb1.Hide();
+                }
+            }
+
+            strSQL = "SELECT b2 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b2ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b2ShowTable.Rows)
+            {
+                string b2 = row["b2"].ToString();
+
+                if (b2.Equals("full"))
+                {
+                    cbb2.Hide();
+                }
+            }
+
+            strSQL = "SELECT b3 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b3ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b3ShowTable.Rows)
+            {
+                string b3 = row["b3"].ToString();
+
+                if (b3.Equals("full"))
+                {
+                    cbb3.Hide();
+                }
+            }
+
+            strSQL = "SELECT b4 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b4ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b4ShowTable.Rows)
+            {
+                string b4 = row["b4"].ToString();
+
+                if (b4.Equals("full"))
+                {
+                    cbb4.Hide();
+                }
+            }
+
+            strSQL = "SELECT b5 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b5ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b5ShowTable.Rows)
+            {
+                string b5 = row["b5"].ToString();
+
+                if (b5.Equals("full"))
+                {
+                    cbb5.Hide();
+                }
+            }
+
+            strSQL = "SELECT b6 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b6ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b6ShowTable.Rows)
+            {
+                string b6 = row["b6"].ToString();
+
+                if (b6.Equals("full"))
+                {
+                    cbb6.Hide();
+                }
+            }
+
+            strSQL = "SELECT b7 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b7ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b7ShowTable.Rows)
+            {
+                string b7 = row["b7"].ToString();
+
+                if (b7.Equals("full"))
+                {
+                    cbb7.Hide();
+                }
+            }
+
+            strSQL = "SELECT b8 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b8ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b8ShowTable.Rows)
+            {
+                string b8 = row["b8"].ToString();
+
+                if (b8.Equals("full"))
+                {
+                    cbb8.Hide();
+                }
+            }
+
+            strSQL = "SELECT b9 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b9ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b9ShowTable.Rows)
+            {
+                string b9 = row["b9"].ToString();
+
+                if (b9.Equals("full"))
+                {
+                    cbb9.Hide();
+                }
+            }
+
+            strSQL = "SELECT b10 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable b10ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in b10ShowTable.Rows)
+            {
+                string b10 = row["b10"].ToString();
+
+                if (b10.Equals("full"))
+                {
+                    cbb10.Hide();
+                }
+            }
+
+            strSQL = "SELECT c1 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c1ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c1ShowTable.Rows)
+            {
+                string c1 = row["c1"].ToString();
+
+                if (c1.Equals("full"))
+                {
+                    cbc1.Hide();
+                }
+            }
+
+            strSQL = "SELECT c2 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c2ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c2ShowTable.Rows)
+            {
+                string c2 = row["c2"].ToString();
+
+                if (c2.Equals("full"))
+                {
+                    cbc2.Hide();
+                }
+            }
+
+            strSQL = "SELECT c3 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c3ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c3ShowTable.Rows)
+            {
+                string c3 = row["c3"].ToString();
+
+                if (c3.Equals("full"))
+                {
+                    cbc3.Hide();
+                }
+            }
+
+            strSQL = "SELECT c4 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c4ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c4ShowTable.Rows)
+            {
+                string c4 = row["c4"].ToString();
+
+                if (c4.Equals("full"))
+                {
+                    cbc4.Hide();
+                }
+            }
+
+            strSQL = "SELECT c5 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c5ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c5ShowTable.Rows)
+            {
+                string c5 = row["c5"].ToString();
+
+                if (c5.Equals("full"))
+                {
+                    cbc5.Hide();
+                }
+            }
+
+            strSQL = "SELECT c6 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c6ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c6ShowTable.Rows)
+            {
+                string c6 = row["c6"].ToString();
+
+                if (c6.Equals("full"))
+                {
+                    cbc6.Hide();
+                }
+            }
+
+            strSQL = "SELECT c7 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c7ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c7ShowTable.Rows)
+            {
+                string c7 = row["c7"].ToString();
+
+                if (c7.Equals("full"))
+                {
+                    cbc7.Hide();
+                }
+            }
+
+            strSQL = "SELECT c8 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c8ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c8ShowTable.Rows)
+            {
+                string c8 = row["c8"].ToString();
+
+                if (c8.Equals("full"))
+                {
+                    cbc8.Hide();
+                }
+            }
+
+            strSQL = "SELECT c9 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c9ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c9ShowTable.Rows)
+            {
+                string c9 = row["c9"].ToString();
+
+                if (c9.Equals("full"))
+                {
+                    cbc9.Hide();
+                }
+            }
+
+            strSQL = "SELECT c10 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable c10ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in c10ShowTable.Rows)
+            {
+                string c10 = row["c10"].ToString();
+
+                if (c10.Equals("full"))
+                {
+                    cbc10.Hide();
+                }
+            }
+
+            strSQL = "SELECT d1 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d1ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d1ShowTable.Rows)
+            {
+                string d1 = row["d1"].ToString();
+
+                if (d1.Equals("full"))
+                {
+                    cbd1.Hide();
+                }
+            }
+
+            strSQL = "SELECT d2 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d2ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d2ShowTable.Rows)
+            {
+                string d2 = row["d2"].ToString();
+
+                if (d2.Equals("full"))
+                {
+                    cbd2.Hide();
+                }
+            }
+
+            strSQL = "SELECT d3 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d3ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d3ShowTable.Rows)
+            {
+                string d3 = row["d3"].ToString();
+
+                if (d3.Equals("full"))
+                {
+                    cbd3.Hide();
+                }
+            }
+
+            strSQL = "SELECT d4 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d4ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d4ShowTable.Rows)
+            {
+                string d4 = row["d4"].ToString();
+
+                if (d4.Equals("full"))
+                {
+                    cbd4.Hide();
+                }
+            }
+
+            strSQL = "SELECT d5 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d5ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d5ShowTable.Rows)
+            {
+                string d5 = row["d5"].ToString();
+
+                if (d5.Equals("full"))
+                {
+                    cbd5.Hide();
+                }
+            }
+
+            strSQL = "SELECT d6 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d6ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d6ShowTable.Rows)
+            {
+                string d6 = row["d6"].ToString();
+
+                if (d6.Equals("full"))
+                {
+                    cbd6.Hide();
+                }
+            }
+
+            strSQL = "SELECT d7 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d7ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d7ShowTable.Rows)
+            {
+                string d7 = row["d7"].ToString();
+
+                if (d7.Equals("full"))
+                {
+                    cbd7.Hide();
+                }
+            }
+
+            strSQL = "SELECT d8 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d8ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d8ShowTable.Rows)
+            {
+                string d8 = row["d8"].ToString();
+
+                if (d8.Equals("full"))
+                {
+                    cbd8.Hide();
+                }
+            }
+
+            strSQL = "SELECT d9 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d9ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d9ShowTable.Rows)
+            {
+                string d9 = row["d9"].ToString();
+
+                if (d9.Equals("full"))
+                {
+                    cbd9.Hide();
+                }
+            }
+
+            strSQL = "SELECT d10 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
+
+            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
+            showDataSet = new DataSet("ShowsTable");
+            myDataAdapter.Fill(showDataSet, "ShowsTable");
+
+            DataTable d10ShowTable = showDataSet.Tables["ShowsTable"];
+
+            foreach (DataRow row in d10ShowTable.Rows)
+            {
+                string d10 = row["d10"].ToString();
+
+                if (d10.Equals("full"))
+                {
+                    cbd10.Hide();
+                }
+            }
         }
 
         private void cbxShowDay_SelectedIndexChanged(object sender, EventArgs e)
