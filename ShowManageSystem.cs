@@ -156,7 +156,7 @@ namespace CIS3309_TheatreGroupProject
             DataSet showDataSet = new DataSet("ShowsTable");
             myDataAdapter.Fill(showDataSet, "ShowsTable");
 
-            DataTable DaysShowTable = showDataSet.Tables["ShowTable"];
+            DataTable DaysShowTable = showDataSet.Tables["ShowsTable"];
 
             if (DaysShowTable == null)
             {
