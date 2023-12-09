@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CIS3309_TheatreGroupProject
 {
-    class Employee
+    public class Employee
     {
         string name;
         string username;

@@ -54,6 +54,9 @@
     <Compile Include="MovieTests.cs" />
     <Compile Include="ShowTests.cs" />
     <Compile Include="TheaterRoomTests.cs" />
+    <Compile Include="EmployeeTests.cs" />
+    <Compile Include="OrderTests.cs" />
+    <Compile Include="TicketTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

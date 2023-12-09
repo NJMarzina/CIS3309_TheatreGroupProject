@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIS3309_TheatreGroupProject", "CIS3309_TheatreGroupProject.csproj", "{E7CD5071-2AF1-4C5C-A910-954D1BAEDFD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{0638EF04-0D95-4335-86ED-7EDF6E2F897B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "UnitTests\Tests.csproj", "{0638EF04-0D95-4335-86ED-7EDF6E2F897B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
