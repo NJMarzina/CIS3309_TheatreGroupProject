@@ -25,7 +25,46 @@ namespace CIS3309_TheatreGroupProject
 
         public void frmBuyTickets_Load(object sender, EventArgs e)
         {
-            
+            cba1.Hide();
+            cba2.Hide();
+            cba3.Hide();
+            cba4.Hide();
+            cba5.Hide();
+            cba6.Hide();
+            cba7.Hide();
+            cba8.Hide();
+            cba9.Hide();
+            cba10.Hide();
+            cbb1.Hide();
+            cbb2.Hide();
+            cbb3.Hide();
+            cbb4.Hide();
+            cbb5.Hide();
+            cbb6.Hide();
+            cbb7.Hide();
+            cbb8.Hide();
+            cbb9.Hide();
+            cbb10.Hide();
+            cbc1.Hide();
+            cbc2.Hide();
+            cbc3.Hide();
+            cbc4.Hide();
+            cbc5.Hide();
+            cbc6.Hide();
+            cbc7.Hide();
+            cbc8.Hide();
+            cbc9.Hide();
+            cbc10.Hide();
+            cbd1.Hide();
+            cbd2.Hide();
+            cbd3.Hide();
+            cbd4.Hide();
+            cbd5.Hide();
+            cbd6.Hide();
+            cbd7.Hide();
+            cbd8.Hide();
+            cbd9.Hide();
+            cbd10.Hide();
         }
 
         public void btnAddToCart_Click(object sender, EventArgs e)
@@ -169,6 +208,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cba1.Hide();
                 }
+                else
+                {
+                    cba1.Show();
+                }
             }
 
             strSQL = "SELECT a2 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -186,6 +229,10 @@ namespace CIS3309_TheatreGroupProject
                 if (a2.Equals("full"))
                 {
                     cba2.Hide();
+                }
+                else
+                {
+                    cba2.Show();
                 }
             }
 
@@ -205,6 +252,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cba3.Hide();
                 }
+                else
+                {
+                    cba3.Show();
+                }
             }
 
             strSQL = "SELECT a4 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -222,6 +273,10 @@ namespace CIS3309_TheatreGroupProject
                 if (a4.Equals("full"))
                 {
                     cba4.Hide();
+                }
+                else
+                {
+                    cba4.Show();
                 }
             }
 
@@ -241,6 +296,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cba5.Hide();
                 }
+                else
+                {
+                    cba5.Show();
+                }
             }
 
             strSQL = "SELECT a6 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -258,6 +317,10 @@ namespace CIS3309_TheatreGroupProject
                 if (a6.Equals("full"))
                 {
                     cba6.Hide();
+                }
+                else
+                {
+                    cba6.Show();
                 }
             }
 
@@ -277,6 +340,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cba7.Hide();
                 }
+                else
+                {
+                    cba7.Show();
+                }
             }
 
             strSQL = "SELECT a8 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -294,6 +361,10 @@ namespace CIS3309_TheatreGroupProject
                 if (a8.Equals("full"))
                 {
                     cba8.Hide();
+                }
+                else
+                {
+                    cba8.Show();
                 }
             }
 
@@ -313,6 +384,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cba9.Hide();
                 }
+                else
+                {
+                    cba9.Show();
+                }
             }
 
             strSQL = "SELECT a10 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -330,6 +405,10 @@ namespace CIS3309_TheatreGroupProject
                 if (a10.Equals("full"))
                 {
                     cba10.Hide();
+                }
+                else
+                {
+                    cba10.Show();
                 }
             }
 
@@ -349,6 +428,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbb1.Hide();
                 }
+                else
+                {
+                    cbb1.Show();
+                }
             }
 
             strSQL = "SELECT b2 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -366,6 +449,10 @@ namespace CIS3309_TheatreGroupProject
                 if (b2.Equals("full"))
                 {
                     cbb2.Hide();
+                }
+                else
+                {
+                    cbb2.Show();
                 }
             }
 
@@ -385,6 +472,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbb3.Hide();
                 }
+                else
+                {
+                    cbb3.Show();
+                }
             }
 
             strSQL = "SELECT b4 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -402,6 +493,10 @@ namespace CIS3309_TheatreGroupProject
                 if (b4.Equals("full"))
                 {
                     cbb4.Hide();
+                }
+                else
+                {
+                    cbb4.Show();
                 }
             }
 
@@ -421,6 +516,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbb5.Hide();
                 }
+                else
+                {
+                    cbb5.Show();
+                }
             }
 
             strSQL = "SELECT b6 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -438,6 +537,10 @@ namespace CIS3309_TheatreGroupProject
                 if (b6.Equals("full"))
                 {
                     cbb6.Hide();
+                }
+                else
+                {
+                    cbb6.Show();
                 }
             }
 
@@ -457,6 +560,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbb7.Hide();
                 }
+                else
+                {
+                    cbb7.Show();
+                }
             }
 
             strSQL = "SELECT b8 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -474,6 +581,10 @@ namespace CIS3309_TheatreGroupProject
                 if (b8.Equals("full"))
                 {
                     cbb8.Hide();
+                }
+                else
+                {
+                    cbb8.Show();
                 }
             }
 
@@ -493,6 +604,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbb9.Hide();
                 }
+                else
+                {
+                    cbb9.Show();
+                }
             }
 
             strSQL = "SELECT b10 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -510,6 +625,10 @@ namespace CIS3309_TheatreGroupProject
                 if (b10.Equals("full"))
                 {
                     cbb10.Hide();
+                }
+                else
+                {
+                    cbb10.Show();
                 }
             }
 
@@ -529,6 +648,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbc1.Hide();
                 }
+                else
+                {
+                    cbc1.Show();
+                }
             }
 
             strSQL = "SELECT c2 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -546,6 +669,10 @@ namespace CIS3309_TheatreGroupProject
                 if (c2.Equals("full"))
                 {
                     cbc2.Hide();
+                }
+                else
+                {
+                    cbc2.Show();
                 }
             }
 
@@ -565,6 +692,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbc3.Hide();
                 }
+                else
+                {
+                    cbc3.Show();
+                }
             }
 
             strSQL = "SELECT c4 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -582,6 +713,10 @@ namespace CIS3309_TheatreGroupProject
                 if (c4.Equals("full"))
                 {
                     cbc4.Hide();
+                }
+                else
+                {
+                    cbc4.Show();
                 }
             }
 
@@ -601,6 +736,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbc5.Hide();
                 }
+                else
+                {
+                    cbc5.Show();
+                }
             }
 
             strSQL = "SELECT c6 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -618,6 +757,10 @@ namespace CIS3309_TheatreGroupProject
                 if (c6.Equals("full"))
                 {
                     cbc6.Hide();
+                }
+                else
+                {
+                    cbc6.Show();
                 }
             }
 
@@ -637,6 +780,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbc7.Hide();
                 }
+                else
+                {
+                    cbc7.Show();
+                }
             }
 
             strSQL = "SELECT c8 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -654,6 +801,10 @@ namespace CIS3309_TheatreGroupProject
                 if (c8.Equals("full"))
                 {
                     cbc8.Hide();
+                }
+                else
+                {
+                    cbc8.Show();
                 }
             }
 
@@ -673,6 +824,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbc9.Hide();
                 }
+                else
+                {
+                    cbc9.Show();
+                }
             }
 
             strSQL = "SELECT c10 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -690,6 +845,10 @@ namespace CIS3309_TheatreGroupProject
                 if (c10.Equals("full"))
                 {
                     cbc10.Hide();
+                }
+                else
+                {
+                    cbc10.Show();
                 }
             }
 
@@ -709,6 +868,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbd1.Hide();
                 }
+                else
+                {
+                    cbd1.Show();
+                }
             }
 
             strSQL = "SELECT d2 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -726,6 +889,10 @@ namespace CIS3309_TheatreGroupProject
                 if (d2.Equals("full"))
                 {
                     cbd2.Hide();
+                }
+                else
+                {
+                    cbd2.Show();
                 }
             }
 
@@ -745,6 +912,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbd3.Hide();
                 }
+                else
+                {
+                    cbd3.Show();
+                }
             }
 
             strSQL = "SELECT d4 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -762,6 +933,10 @@ namespace CIS3309_TheatreGroupProject
                 if (d4.Equals("full"))
                 {
                     cbd4.Hide();
+                }
+                else
+                {
+                    cbd4.Show();
                 }
             }
 
@@ -781,6 +956,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbd5.Hide();
                 }
+                else
+                {
+                    cbd5.Show();
+                }
             }
 
             strSQL = "SELECT d6 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -798,6 +977,10 @@ namespace CIS3309_TheatreGroupProject
                 if (d6.Equals("full"))
                 {
                     cbd6.Hide();
+                }
+                else
+                {
+                    cbd6.Show();
                 }
             }
 
@@ -817,6 +1000,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbd7.Hide();
                 }
+                else
+                {
+                    cbd7.Show();
+                }
             }
 
             strSQL = "SELECT d8 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -834,6 +1021,10 @@ namespace CIS3309_TheatreGroupProject
                 if (d8.Equals("full"))
                 {
                     cbd8.Hide();
+                }
+                else
+                {
+                    cbd8.Show();
                 }
             }
 
@@ -853,6 +1044,10 @@ namespace CIS3309_TheatreGroupProject
                 {
                     cbd9.Hide();
                 }
+                else
+                {
+                    cbd9.Show();
+                }
             }
 
             strSQL = "SELECT d10 FROM ShowsTable WHERE Movie = '" + movie + "' AND ShowTime = '" + timeSlot + "'";
@@ -870,6 +1065,10 @@ namespace CIS3309_TheatreGroupProject
                 if (d10.Equals("full"))
                 {
                     cbd10.Hide();
+                }
+                else
+                {
+                    cbd10.Show();
                 }
             }
         }
