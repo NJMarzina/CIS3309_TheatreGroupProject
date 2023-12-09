@@ -141,7 +141,7 @@ namespace CIS3309_TheatreGroupProject
             int quantity = seats.Count;
             double subtotal = o.Calculate(quantity);    //subtotal for order
 
-            frmReceipt receipt = new frmReceipt(subtotal);
+            frmReceipt receipt = new frmReceipt(subtotal, movie, quantity, timeSlot);
             receipt.Show();
         }
 
