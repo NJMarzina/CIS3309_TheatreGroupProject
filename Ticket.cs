@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CIS3309_TheatreGroupProject
 {
-    class Ticket
+    public class Ticket
     {
         //seat
         //movie
@@ -24,6 +24,11 @@ namespace CIS3309_TheatreGroupProject
         public Ticket()
         {
 
+        }
+
+        public Ticket(double price)
+        {
+            this.price = price;
         }
 
         public Ticket(Movie m, TheaterRoom theater, int price)

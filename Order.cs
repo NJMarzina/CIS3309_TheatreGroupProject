@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CIS3309_TheatreGroupProject
 {
-    class Order
+    public class Order
     {
         //ticket
         //price
@@ -18,6 +18,11 @@ namespace CIS3309_TheatreGroupProject
         public Order()
         {
 
+        }
+
+        public Order(double tot)
+        {
+            this.total = tot;
         }
 
         public Order(Ticket t, double tot)
