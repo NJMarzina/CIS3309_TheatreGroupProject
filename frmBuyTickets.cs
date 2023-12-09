@@ -140,6 +140,9 @@ namespace CIS3309_TheatreGroupProject
             Order o = new Order();
             int quantity = seats.Count;
             double subtotal = o.Calculate(quantity);    //subtotal for order
+
+            frmReceipt receipt = new frmReceipt(subtotal);
+            receipt.Show();
         }
 
         private void cbxMovies_SelectedIndexChanged(object sender, EventArgs e)
